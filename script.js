@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadGameData() {
         try {
             // Check if a specific data file was requested via URL parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const dataFile = urlParams.get('data') || 'jeopardy-data.json';
+            const dataFile = JeopardyUtils.getCurrentDataFile();
 
             const response = await fetch(`./data/${dataFile}`);
             if (!response.ok) {
@@ -17,15 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             const data = await response.json();
 
-            // Basic validation
-            if (!Array.isArray(data) || data.length !== 5) {
-                throw new Error("Data format error: The JSON file should contain an array of 5 categories.");
+            // Validate data format
+            if (!JeopardyUtils.isValidJeopardyData(data)) {
+                throw new Error("Data format error: The JSON file should contain an array of 5 categories, each with 5 clues containing points, answer, and question fields.");
             }
-            data.forEach((cat, i) => {
-                if (!cat.topic || !Array.isArray(cat.clues) || cat.clues.length !== 5) {
-                    throw new Error(`Data format error in category #${i + 1}. Each category needs a 'topic' and a 'clues' array of 5 items.`);
-                }
-            });
 
             gameData = data;
             updateGameTitle(dataFile);
@@ -40,20 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateGameTitle(dataFile) {
         const headerTitle = document.querySelector('header h1');
         if (dataFile !== 'jeopardy-data.json') {
-            const gameName = formatDisplayName(dataFile);
+            const gameName = JeopardyUtils.formatDisplayName(dataFile);
             headerTitle.textContent = `CLASSROOM JEOPARDY - ${gameName.toUpperCase()}`;
         }
-    }
-
-    // --- Format File Names for Display ---
-    function formatDisplayName(fileName) {
-        // Remove .json extension and format nicely
-        let name = fileName.replace('.json', '');
-        // Replace hyphens and underscores with spaces
-        name = name.replace(/[-_]/g, ' ');
-        // Capitalize each word
-        name = name.replace(/\b\w/g, l => l.toUpperCase());
-        return name;
     }
 
     // --- UI Rendering ---

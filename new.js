@@ -54,24 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (response.ok) {
                         // Validate that it's a proper Jeopardy data file
                         const data = await response.json();
-                        if (Array.isArray(data) && data.length === 5) {
-                            // Validate each category has proper structure
-                            const isValid = data.every(cat =>
-                                cat.topic &&
-                                Array.isArray(cat.clues) &&
-                                cat.clues.length === 5 &&
-                                cat.clues.every(clue =>
-                                    clue.points && clue.answer && clue.question
-                                )
-                            );
-
-                            if (isValid) {
-                                availableFiles.push({
-                                    fileName: fileName,
-                                    displayName: formatDisplayName(fileName),
-                                    data: data
-                                });
-                            }
+                        if (JeopardyUtils.isValidJeopardyData(data)) {
+                            availableFiles.push({
+                                fileName: fileName,
+                                displayName: JeopardyUtils.formatDisplayName(fileName),
+                                data: data
+                            });
                         }
                     }
                 } catch (error) {
@@ -85,17 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error loading available files:', error);
             showError('Failed to load available game files. Please ensure data files are in the data folder.');
         }
-    }
-
-    // --- Format File Names for Display ---
-    function formatDisplayName(fileName) {
-        // Remove .json extension and format nicely
-        let name = fileName.replace('.json', '');
-        // Replace hyphens and underscores with spaces
-        name = name.replace(/[-_]/g, ' ');
-        // Capitalize each word
-        name = name.replace(/\b\w/g, l => l.toUpperCase());
-        return name;
     }
 
     // --- Populate Dropdown ---
@@ -144,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Redirect to index.html with the selected file as a parameter
-        window.location.href = `index.html?data=${encodeURIComponent(selectedFile)}`;
+        window.location.href = JeopardyUtils.createGameUrl(selectedFile);
     });
 
     // --- Error Display ---
