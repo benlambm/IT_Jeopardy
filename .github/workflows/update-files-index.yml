@@ -1,0 +1,100 @@
+name: Auto-generate files.json
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'data/**/*.json' ]
+  pull_request:
+    branches: [ main ]
+    paths: [ 'data/**/*.json' ]
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-files-index:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Generate files.json
+      run: |
+        # Create a Node.js script to generate files.json
+        cat > generate-files-index.js << 'EOF'
+        const fs = require('fs');
+        const path = require('path');
+        
+        // Function to validate Jeopardy data structure
+        function isValidJeopardyFile(data) {
+          if (!Array.isArray(data) || data.length !== 5) {
+            return false;
+          }
+          
+          return data.every(category => {
+            return category.topic && 
+                   Array.isArray(category.clues) && 
+                   category.clues.length === 5 &&
+                   category.clues.every(clue => 
+                     clue.points && clue.answer && clue.question
+                   );
+          });
+        }
+        
+        // Read all JSON files in data directory
+        const dataDir = './data';
+        const files = fs.readdirSync(dataDir)
+          .filter(file => file.endsWith('.json') && file !== 'files.json')
+          .filter(file => {
+            try {
+              const filePath = path.join(dataDir, file);
+              const content = fs.readFileSync(filePath, 'utf8');
+              const data = JSON.parse(content);
+              return isValidJeopardyFile(data);
+            } catch (error) {
+              console.warn(`Skipping invalid file ${file}:`, error.message);
+              return false;
+            }
+          })
+          .sort(); // Sort alphabetically
+        
+        // Generate files.json
+        const filesIndex = JSON.stringify(files, null, 2);
+        fs.writeFileSync('./data/files.json', filesIndex);
+        
+        console.log(`Generated files.json with ${files.length} valid game files:`);
+        files.forEach(file => console.log(`  - ${file}`));
+        EOF
+        
+        # Run the script
+        node generate-files-index.js
+    
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if git diff --quiet data/files.json; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/files.json
+        git commit -m "Auto-update files.json index [skip ci]"
+        git push
+    
+    - name: Display results
+      run: |
+        echo "Files index updated successfully!"
+        echo "Current files.json content:"
+        cat data/files.json

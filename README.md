@@ -32,8 +32,39 @@ Your project folder should look like this:
 
 #### Adding New Game Files
 - Create new `.json` files in the `data` folder following the same format
-- The game selector will automatically detect them
-- Optionally, update `data/files.json` to explicitly list available games
+- **Automatic Discovery**: 
+  - GitHub Actions will auto-update `files.json` when you push changes
+  - Or run `node generate-files-index.js` locally to regenerate the index
+- The game selector will automatically detect and validate new files
+- Invalid files are automatically excluded with helpful error messages
+
+### 🤖 Automated File Management
+
+This project includes GitHub Actions automation for seamless file management:
+
+#### Automatic Index Generation
+- **Trigger**: Runs automatically when JSON files are added/modified in the `data` folder
+- **Process**: Validates all JSON files and updates `files.json` with valid games only
+- **Deployment**: GitHub Pages automatically serves the updated content
+
+#### Manual Index Generation
+For local development or manual updates:
+```bash
+# Generate files.json locally
+node generate-files-index.js
+
+# The script will:
+# ✅ Scan data folder for JSON files
+# ✅ Validate Jeopardy format (5 categories × 5 clues)
+# ✅ Generate sorted files.json index
+# ✅ Show helpful validation results
+```
+
+#### GitHub Pages Setup
+1. Go to your repository Settings → Pages
+2. Set Source to "GitHub Actions"
+3. The site will auto-deploy on every push to main branch
+4. Access your game at: `https://yourusername.github.io/your-repo-name/new.html`
 
 ---
 
