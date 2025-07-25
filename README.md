@@ -4,22 +4,36 @@ A simple, self-contained Jeopardy game to run in a web browser for classroom lea
 
 ### How to Use
 
-1.  **Prepare Your Questions:** The game is powered by a single data file. You can create or edit your own question set in the `data/jeopardy-data.json` file. See the section below on how to easily generate this file using an AI assistant.
-2.  **Place Your Data File:** Drag your `jeopardy-data.json` file into the `data` folder, replacing the example file if it exists.
-3.  **Run the Game:** Double-click the `index.html` file to open it in your preferred web browser (Chrome, Firefox, Edge, etc.). The game will load your questions automatically.
+#### Quick Start (Single Game)
+1.  **Prepare Your Questions:** Create or edit your question set in the `data/jeopardy-data.json` file.
+2.  **Run the Game:** Double-click the `index.html` file to open it in your preferred web browser.
+
+#### Multiple Games (Recommended)
+1.  **Prepare Multiple Game Files:** Create multiple JSON files in the `data` folder (e.g., `science.json`, `history.json`, etc.).
+2.  **Game Selection:** Double-click the `new.html` file to open the game selector.
+3.  **Choose Your Game:** Select from available game files using the dropdown menu and click "START GAME".
 
 ### File Structure
 
-Your project folder should look like this. The only file you need to modify is `jeopardy-data.json`.
+Your project folder should look like this:
 
 ```
 /jeopardy-game/
 |-- data/
-|   `-- jeopardy-data.json  <-- EDIT OR REPLACE THIS FILE
-|-- index.html              <-- DOUBLE-CLICK THIS TO START
+|   |-- jeopardy-data.json  <-- Default game file
+|   |-- sample-data.json    <-- Additional game files
+|   |-- programming.json    <-- Add as many as you want
+|   `-- files.json          <-- Optional: list of available games
+|-- new.html                <-- GAME SELECTOR (Recommended start point)
+|-- index.html              <-- Direct game launcher
 |-- style.css
 `-- script.js
 ```
+
+#### Adding New Game Files
+- Create new `.json` files in the `data` folder following the same format
+- The game selector will automatically detect them
+- Optionally, update `data/files.json` to explicitly list available games
 
 ---
 

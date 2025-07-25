@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Jeopardy Game - Classroom Jeopardy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-container">
+        <header>
+            <h1>SELECT JEOPARDY GAME</h1>
+        </header>
+        <main id="selection-content">
+            <div id="game-selector">
+                <div id="selector-box">
+                    <h2>Choose Your Game Data</h2>
+                    <form id="game-selection-form">
+                        <div class="form-group">
+                            <label for="data-file-select">Available Game Files:</label>
+                            <select id="data-file-select" name="dataFile" required>
+                                <option value="">Loading game files...</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="start-game-btn" class="start-button" disabled>
+                            START GAME
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="overlay" class="hidden">
+        <div id="overlay-content"></div>
+    </div>
+
+    <script src="new.js"></script>
+</body>
+
+</html>
