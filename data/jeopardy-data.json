@@ -1,0 +1,52 @@
+[
+  {
+    "topic": "WEB BASICS",
+    "clues": [
+      { "points": 100, "answer": "This language is used for structuring web pages.", "question": "HTML" },
+      { "points": 200, "answer": "This language is used for styling web pages.", "question": "CSS" },
+      { "points": 300, "answer": "This language is used for adding interactivity to web pages.", "question": "JavaScript" },
+      { "points": 400, "answer": "A protocol for fetching resources such as HTML documents.", "question": "HTTP" },
+      { "points": 500, "answer": "An address for a resource on the web.", "question": "URL" }
+    ]
+  },
+  {
+    "topic": "JAVASCRIPT",
+    "clues": [
+      { "points": 100, "answer": "A keyword to declare a variable that cannot be reassigned.", "question": "const" },
+      { "points": 200, "answer": "This data type represents true or false values.", "question": "boolean" },
+      { "points": 300, "answer": "A function passed into another function as an argument.", "question": "callback function" },
+      { "points": 400, "answer": "The API used to make network requests in modern browsers.", "question": "Fetch API" },
+      { "points": 500, "answer": "This object represents the eventual completion (or failure) of an asynchronous operation.", "question": "Promise" }
+    ]
+  },
+  {
+    "topic": "FAMOUS ALGORITHMS",
+    "clues": [
+      { "points": 100, "answer": "A search algorithm that finds the position of a target value within a sorted array.", "question": "Binary Search" },
+      { "points": 200, "answer": "A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.", "question": "Bubble Sort" },
+      { "points": 300, "answer": "An algorithm for finding the shortest paths between nodes in a weighted graph.", "question": "Dijkstra's Algorithm" },
+      { "points": 400, "answer": "An efficient, comparison-based, in-place sorting algorithm.", "question": "Quicksort" },
+      { "points": 500, "answer": "A data structure that uses a hash function to map identifying values, known as keys, to their associated values.", "question": "Hash Table" }
+    ]
+  },
+  {
+    "topic": "DATA STRUCTURES",
+    "clues": [
+      { "points": 100, "answer": "A linear collection of elements, where elements are added and removed from the same end (Last-In, First-Out).", "question": "Stack" },
+      { "points": 200, "answer": "A linear collection of elements, where elements are added at one end and removed from the other (First-In, First-Out).", "question": "Queue" },
+      { "points": 300, "answer": "A data structure that consists of a set of nodes and a set of edges that establish relationships between the nodes.", "question": "Graph" },
+      { "points": 400, "answer": "A collection of items stored in a non-contiguous memory location and linked using pointers.", "question": "Linked List" },
+      { "points": 500, "answer": "A tree-like data structure in which each node has at most two children, which are referred to as the left child and the right child.", "question": "Binary Tree" }
+    ]
+  },
+  {
+    "topic": "TODAY'S DATE",
+    "clues": [
+      { "points": 100, "answer": "The current month.", "question": "July" },
+      { "points": 200, "answer": "The current day of the week.", "question": "Friday" },
+      { "points": 300, "answer": "The current year.", "question": "2025" },
+      { "points": 400, "answer": "The name of the current season in the Northern Hemisphere.", "question": "Summer" },
+      { "points": 500, "answer": "The current day of the month.", "question": "25" }
+    ]
+  }
+]
