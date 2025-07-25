@@ -4,22 +4,67 @@ A simple, self-contained Jeopardy game to run in a web browser for classroom lea
 
 ### How to Use
 
-1.  **Prepare Your Questions:** The game is powered by a single data file. You can create or edit your own question set in the `data/jeopardy-data.json` file. See the section below on how to easily generate this file using an AI assistant.
-2.  **Place Your Data File:** Drag your `jeopardy-data.json` file into the `data` folder, replacing the example file if it exists.
-3.  **Run the Game:** Double-click the `index.html` file to open it in your preferred web browser (Chrome, Firefox, Edge, etc.). The game will load your questions automatically.
+#### Quick Start (Single Game)
+1.  **Prepare Your Questions:** Create or edit your question set in the `data/jeopardy-data.json` file.
+2.  **Run the Game:** Double-click the `index.html` file to open it in your preferred web browser.
+
+#### Multiple Games (Recommended)
+1.  **Prepare Multiple Game Files:** Create multiple JSON files in the `data` folder (e.g., `science.json`, `history.json`, etc.).
+2.  **Game Selection:** Double-click the `new.html` file to open the game selector.
+3.  **Choose Your Game:** Select from available game files using the dropdown menu and click "START GAME".
 
 ### File Structure
 
-Your project folder should look like this. The only file you need to modify is `jeopardy-data.json`.
+Your project folder should look like this:
 
 ```
 /jeopardy-game/
 |-- data/
-|   `-- jeopardy-data.json  <-- EDIT OR REPLACE THIS FILE
-|-- index.html              <-- DOUBLE-CLICK THIS TO START
+|   |-- jeopardy-data.json  <-- Default game file
+|   |-- sample-data.json    <-- Additional game files
+|   |-- programming.json    <-- Add as many as you want
+|   `-- files.json          <-- Optional: list of available games
+|-- new.html                <-- GAME SELECTOR (Recommended start point)
+|-- index.html              <-- Direct game launcher
 |-- style.css
 `-- script.js
 ```
+
+#### Adding New Game Files
+- Create new `.json` files in the `data` folder following the same format
+- **Automatic Discovery**: 
+  - GitHub Actions will auto-update `files.json` when you push changes
+  - Or run `node generate-files-index.js` locally to regenerate the index
+- The game selector will automatically detect and validate new files
+- Invalid files are automatically excluded with helpful error messages
+
+### 🤖 Automated File Management
+
+This project includes GitHub Actions automation for seamless file management:
+
+#### Automatic Index Generation
+- **Trigger**: Runs automatically when JSON files are added/modified in the `data` folder
+- **Process**: Validates all JSON files and updates `files.json` with valid games only
+- **Deployment**: GitHub Pages automatically serves the updated content
+
+#### Manual Index Generation
+For local development or manual updates:
+```bash
+# Generate files.json locally
+node generate-files-index.js
+
+# The script will:
+# ✅ Scan data folder for JSON files
+# ✅ Validate Jeopardy format (5 categories × 5 clues)
+# ✅ Generate sorted files.json index
+# ✅ Show helpful validation results
+```
+
+#### GitHub Pages Setup
+1. Go to your repository Settings → Pages
+2. Set Source to "GitHub Actions"
+3. The site will auto-deploy on every push to main branch
+4. Access your game at: `https://yourusername.github.io/your-repo-name/new.html`
 
 ---
 

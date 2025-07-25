@@ -7,27 +7,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Data Loading and Validation ---
     async function loadGameData() {
         try {
-            const response = await fetch('./data/jeopardy-data.json');
+            // Check if a specific data file was requested via URL parameter
+            const dataFile = JeopardyUtils.getCurrentDataFile();
+
+            const response = await fetch(`./data/${dataFile}`);
             if (!response.ok) {
-                throw new Error(`Data file not found. Ensure 'jeopardy-data.json' is in the 'data' folder. (HTTP Status: ${response.status})`);
+                throw new Error(`Data file '${dataFile}' not found. Ensure the file exists in the 'data' folder. (HTTP Status: ${response.status})`);
             }
             const data = await response.json();
-            
-            // Basic validation
-            if (!Array.isArray(data) || data.length !== 5) {
-                throw new Error("Data format error: The JSON file should contain an array of 5 categories.");
+
+            // Validate data format
+            if (!JeopardyUtils.isValidJeopardyData(data)) {
+                throw new Error("Data format error: The JSON file should contain an array of 5 categories, each with 5 clues containing points, answer, and question fields.");
             }
-            data.forEach((cat, i) => {
-                if (!cat.topic || !Array.isArray(cat.clues) || cat.clues.length !== 5) {
-                    throw new Error(`Data format error in category #${i+1}. Each category needs a 'topic' and a 'clues' array of 5 items.`);
-                }
-            });
 
             gameData = data;
+            updateGameTitle(dataFile);
             renderBoard();
         } catch (error) {
             console.error("Failed to load or parse game data:", error);
             displayError(error.message);
+        }
+    }
+
+    // --- Update Game Title ---
+    function updateGameTitle(dataFile) {
+        const headerTitle = document.querySelector('header h1');
+        if (dataFile !== 'jeopardy-data.json') {
+            const gameName = JeopardyUtils.formatDisplayName(dataFile);
+            headerTitle.textContent = `CLASSROOM JEOPARDY - ${gameName.toUpperCase()}`;
         }
     }
 
@@ -57,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boardElement.appendChild(column);
         });
     }
-    
+
     function displayError(message) {
         boardElement.innerHTML = `<div class="error-message"><strong>Error:</strong><br>${message}</div>`;
     }
@@ -81,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const showQuestionHandler = () => {
             // --- Stage 2: Show the Question (Correct Response) ---
             overlayContentElement.textContent = clueData.question;
-            
+
             // Remove previous listener to avoid bugs
             overlayElement.removeEventListener('click', showQuestionHandler);
 
