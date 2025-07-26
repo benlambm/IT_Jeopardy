@@ -46,11 +46,11 @@ window.JeopardyUtils = (function () {
 
     /**
      * Gets the current data file parameter from URL
-     * @returns {string} The data file name or default 'jeopardy-data.json'
+     * @returns {string} The data file name or default 'a-plus.json'
      */
     function getCurrentDataFile() {
         const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get('data') || 'jeopardy-data.json';
+        return urlParams.get('data') || 'a-plus.json';
     }
 
     /**
@@ -94,7 +94,7 @@ window.JeopardyUtils = (function () {
      */
     function updateGameTitle(dataFile) {
         const headerTitle = document.querySelector('header h1');
-        if (headerTitle && dataFile !== 'jeopardy-data.json') {
+        if (headerTitle && dataFile !== 'a-plus.json') {
             const gameName = formatDisplayName(dataFile);
             headerTitle.textContent = `CLASSROOM JEOPARDY - ${gameName.toUpperCase()}`;
         }

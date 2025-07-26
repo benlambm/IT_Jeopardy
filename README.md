@@ -5,7 +5,7 @@ A simple, self-contained Jeopardy game to run in a web browser for classroom lea
 ### How to Use
 
 #### Quick Start (Single Game)
-1.  **Prepare Your Questions:** Create or edit your question set in the `data/jeopardy-data.json` file.
+1.  **Prepare Your Questions:** Create or edit your question set in a JSON file in the `data` folder.
 2.  **Run the Game:** Double-click the `index.html` file to open it in your preferred web browser.
 
 #### Multiple Games (Recommended)
@@ -20,9 +20,8 @@ Your project folder should look like this:
 ```
 /jeopardy-game/
 |-- data/
-|   |-- jeopardy-data.json  <-- Default game file
-|   |-- sample-data.json    <-- Additional game files
-|   |-- programming.json    <-- Add as many as you want
+|   |-- a-plus.json          <-- Default game file
+|   |-- your-game.json       <-- Add as many as you want
 |   `-- files.json          <-- Optional: list of available games
 |-- new.html                <-- GAME SELECTOR (Recommended start point)
 |-- index.html              <-- Direct game launcher
@@ -70,14 +69,14 @@ node generate-files-index.js
 
 ### ⭐ Using an AI to Generate Your Questions
 
-You can use any modern LLM (like ChatGPT, Claude, etc.) to automatically create the `jeopardy-data.json` file for you.
+You can use any modern LLM (like ChatGPT, Claude, etc.) to automatically create JSON files for your game.
 
 Simply copy the prompt below, paste it into the AI chat, and replace the last line with your own topics or a paste of your class notes. The AI will generate the file content in the exact format the game needs.
 
-#### Custom LLM Prompt for Generating `jeopardy-data.json`
+#### Custom LLM Prompt for Generating Game Data Files
 
 ```
-You are an expert curriculum designer tasked with creating a `jeopardy-data.json` file for a classroom game. Your output must be a single, valid JSON code block and nothing else.
+You are an expert curriculum designer tasked with creating a JSON game data file for a classroom Jeopardy game. Your output must be a single, valid JSON code block and nothing else.
 
 The JSON structure must follow these strict rules:
 1.  The root element is a JSON array `[]`.
@@ -90,7 +89,7 @@ The JSON structure must follow these strict rules:
     - `"answer"`: A string that is the clue/definition displayed to the player.
     - `"question"`: A string that is the correct response. This should be the term itself, NOT in the "What is..." format (e.g., "HTML", not "What is HTML?").
 
-Based on the materials I provide below, generate the complete `jeopardy-data.json` content.
+Based on the materials I provide below, generate the complete game data JSON content.
 
 ---
 [PASTE YOUR TOPICS OR CLASS NOTES HERE. For example: "Create a Jeopardy board based on the following 5 topics: US History, Basic Chemistry, World Capitals, Shakespeare's Plays, and Simple Algebra."]
