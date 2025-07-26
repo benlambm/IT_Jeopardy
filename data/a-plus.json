@@ -1,0 +1,152 @@
+[
+    {
+        "topic": "NETWORK TYPES",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "A network covering a small local area such as a home or office, providing high-speed communication.",
+                "question": "LAN"
+            },
+            {
+                "points": 200,
+                "answer": "A network spanning large geographic distances, often composed of interconnected LANs.",
+                "question": "WAN"
+            },
+            {
+                "points": 300,
+                "answer": "A very short-range network around an individual, like Bluetooth connections between phone and headset.",
+                "question": "PAN"
+            },
+            {
+                "points": 400,
+                "answer": "A network covering a city or campus, larger than a LAN but smaller than a WAN.",
+                "question": "MAN"
+            },
+            {
+                "points": 500,
+                "answer": "A high-speed network that connects servers to storage devices, often using Fibre Channel or iSCSI.",
+                "question": "SAN"
+            }
+        ]
+    },
+    {
+        "topic": "NETWORK PROTOCOLS & PORTS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The unencrypted protocol for web pages, operating on TCP port 80.",
+                "question": "HTTP"
+            },
+            {
+                "points": 200,
+                "answer": "The protocol for encrypted remote terminal access, using TCP port 22.",
+                "question": "SSH"
+            },
+            {
+                "points": 300,
+                "answer": "The protocol for sending emails between servers, using TCP port 25.",
+                "question": "SMTP"
+            },
+            {
+                "points": 400,
+                "answer": "The protocol that resolves domain names to IP addresses, using UDP port 53.",
+                "question": "DNS"
+            },
+            {
+                "points": 500,
+                "answer": "Protocol for file and printer sharing on Windows networks, using TCP port 445.",
+                "question": "SMB"
+            }
+        ]
+    },
+    {
+        "topic": "WIRELESS TECHNOLOGIES",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The Wi-Fi standard that operates only in the 2.4 GHz band and supports up to 11 Mb/s.",
+                "question": "802.11b"
+            },
+            {
+                "points": 200,
+                "answer": "Very short-range wireless tech used in tap-to-pay and device pairing scenarios.",
+                "question": "NFC"
+            },
+            {
+                "points": 300,
+                "answer": "The wireless standard also called 'Wi-Fi 5', operates in 5 GHz with gigabit speeds.",
+                "question": "802.11ac"
+            },
+            {
+                "points": 400,
+                "answer": "The device that provides wireless connectivity to clients, often built into routers.",
+                "question": "Access Point"
+            },
+            {
+                "points": 500,
+                "answer": "The band used by both Wi-Fi and Bluetooth, prone to interference from microwaves and cordless phones.",
+                "question": "2.4 GHz"
+            }
+        ]
+    },
+    {
+        "topic": "NETWORK DEVICES & CONFIG",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "A device that connects and routes traffic between different IP subnets; typically the default gateway.",
+                "question": "Router"
+            },
+            {
+                "points": 200,
+                "answer": "The device that connects multiple LAN devices and forwards Ethernet frames using MAC addresses.",
+                "question": "Switch"
+            },
+            {
+                "points": 300,
+                "answer": "Technology that supplies electrical power over network cables to devices like IP cameras and APs.",
+                "question": "PoE"
+            },
+            {
+                "points": 400,
+                "answer": "The modem type that connects to a coaxial cable for broadband internet access.",
+                "question": "DOCSIS"
+            },
+            {
+                "points": 500,
+                "answer": "A logical segmentation of a switch’s ports for security or isolation, identifiable by a tag number.",
+                "question": "VLAN"
+            }
+        ]
+    },
+    {
+        "topic": "NETWORK TROUBLESHOOTING",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "A Windows-assigned address (169.254.x.x) indicating no DHCP response was received.",
+                "question": "APIPA"
+            },
+            {
+                "points": 200,
+                "answer": "This utility is used to test IP connectivity to another network host by sending echo requests.",
+                "question": "ping"
+            },
+            {
+                "points": 300,
+                "answer": "High variation in packet delivery time, causing choppy VoIP and video calls.",
+                "question": "Jitter"
+            },
+            {
+                "points": 400,
+                "answer": "A network tool that injects a tone into a cable for tracing in a wiring closet.",
+                "question": "Toner Probe"
+            },
+            {
+                "points": 500,
+                "answer": "This problem occurs when a network switch port repeatedly goes up and down, often due to a faulty cable.",
+                "question": "Port Flapping"
+            }
+        ]
+    }
+]
