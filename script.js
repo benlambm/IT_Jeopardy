@@ -22,22 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             gameData = data;
-            updateGameTitle(dataFile);
+            JeopardyUtils.updateGameTitle(dataFile);
             renderBoard();
         } catch (error) {
             console.error("Failed to load or parse game data:", error);
-            displayError(error.message);
+            JeopardyUtils.showFatalError(error.message);
         }
     }
 
     // --- Update Game Title ---
-    function updateGameTitle(dataFile) {
-        const headerTitle = document.querySelector('header h1');
-        if (dataFile !== 'jeopardy-data.json') {
-            const gameName = JeopardyUtils.formatDisplayName(dataFile);
-            headerTitle.textContent = `CLASSROOM JEOPARDY - ${gameName.toUpperCase()}`;
-        }
-    }
+    // This function has been moved to utils.js
 
     // --- UI Rendering ---
     function renderBoard() {
@@ -66,9 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function displayError(message) {
-        boardElement.innerHTML = `<div class="error-message"><strong>Error:</strong><br>${message}</div>`;
-    }
+    // This function has been moved to utils.js and is now JeopardyUtils.showFatalError
+    // function displayError(message) {
+    //     boardElement.innerHTML = `<div class="error-message"><strong>Error:</strong><br>${message}</div>`;
+    // }
 
     // --- Game Logic and Event Handling ---
     function handleClueClick(event) {

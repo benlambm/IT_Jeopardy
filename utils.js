@@ -63,11 +63,50 @@ window.JeopardyUtils = (function () {
         return `${baseUrl}?data=${encodeURIComponent(dataFile)}`;
     }
 
+    /**
+     * Displays a fatal error message in a full-screen overlay.
+     * @param {string} message - The error message to display.
+     */
+    function showFatalError(message) {
+        const overlayElement = document.getElementById('overlay');
+        const overlayContentElement = document.getElementById('overlay-content');
+
+        if (!overlayElement || !overlayContentElement) {
+            console.error('Cannot display fatal error because overlay elements are not in the DOM.');
+            alert(`Critical Error: ${message}`); // Fallback for when the DOM is broken
+            return;
+        }
+
+        overlayContentElement.innerHTML = `<div class="error-message"><strong>Error:</strong><br>${message}</div>`;
+        overlayElement.classList.remove('hidden');
+
+        // Add a one-time listener to close the overlay on click
+        const closeHandler = () => {
+            overlayElement.classList.add('hidden');
+            overlayElement.removeEventListener('click', closeHandler);
+        };
+        overlayElement.addEventListener('click', closeHandler);
+    }
+
+    /**
+     * Updates the main H1 title of the game page.
+     * @param {string} dataFile - The name of the game data file being used.
+     */
+    function updateGameTitle(dataFile) {
+        const headerTitle = document.querySelector('header h1');
+        if (headerTitle && dataFile !== 'jeopardy-data.json') {
+            const gameName = formatDisplayName(dataFile);
+            headerTitle.textContent = `CLASSROOM JEOPARDY - ${gameName.toUpperCase()}`;
+        }
+    }
+
     // Public API
     return {
         formatDisplayName,
         isValidJeopardyData,
         getCurrentDataFile,
-        createGameUrl
+        createGameUrl,
+        showFatalError,
+        updateGameTitle
     };
 })();

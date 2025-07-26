@@ -2,76 +2,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectElement = document.getElementById('data-file-select');
     const startButton = document.getElementById('start-game-btn');
     const form = document.getElementById('game-selection-form');
-    const overlayElement = document.getElementById('overlay');
-    const overlayContentElement = document.getElementById('overlay-content');
 
     // --- Load Available JSON Files ---
     async function loadAvailableFiles() {
         try {
-            // Try to fetch a files index first, fallback to common patterns
-            let fileList = [];
-
-            try {
-                // Try to fetch a file index (if it exists)
-                const indexResponse = await fetch('./data/files.json');
-                if (indexResponse.ok) {
-                    const indexData = await indexResponse.json();
-                    if (Array.isArray(indexData)) {
-                        fileList = indexData;
-                    }
-                }
-            } catch (e) {
-                // Index file doesn't exist, use common patterns
+            const response = await fetch('./data/files.json');
+            if (!response.ok) {
+                throw new Error('The `data/files.json` index file is missing or could not be loaded. This file is required to list available games.');
             }
+            const fileList = await response.json();
 
-            // If no index file, try common patterns
-            if (fileList.length === 0) {
-                fileList = [
-                    'jeopardy-data.json',
-                    'sample-data.json',
-                    'programming.json',
-                    'it-basics.json',
-                    'science.json',
-                    'history.json',
-                    'math.json',
-                    'geography.json',
-                    'literature.json',
-                    'technology.json',
-                    'web-dev.json',
-                    'databases.json',
-                    'networking.json',
-                    'cybersecurity.json',
-                    'algorithms.json',
-                    'data-structures.json'
-                ];
+            if (!Array.isArray(fileList) || fileList.length === 0) {
+                throw new Error('The `data/files.json` file is not a valid, non-empty array. Please check its format.');
             }
 
             const availableFiles = [];
-
-            for (const fileName of fileList) {
+            // Use Promise.all to validate files in parallel for faster loading
+            await Promise.all(fileList.map(async (fileName) => {
                 try {
-                    const response = await fetch(`./data/${fileName}`);
-                    if (response.ok) {
-                        // Validate that it's a proper Jeopardy data file
-                        const data = await response.json();
+                    const res = await fetch(`./data/${fileName}`);
+                    if (res.ok) {
+                        const data = await res.json();
                         if (JeopardyUtils.isValidJeopardyData(data)) {
                             availableFiles.push({
                                 fileName: fileName,
                                 displayName: JeopardyUtils.formatDisplayName(fileName),
-                                data: data
                             });
                         }
                     }
                 } catch (error) {
-                    // File doesn't exist or isn't valid JSON, skip it
-                    continue;
+                    // Log and skip invalid or missing files
+                    console.warn(`Skipping file "${fileName}" due to validation or fetch error.`, error);
                 }
-            }
+            }));
+
+            // Sort files alphabetically by display name for a better user experience
+            availableFiles.sort((a, b) => a.displayName.localeCompare(b.displayName));
 
             populateDropdown(availableFiles);
         } catch (error) {
             console.error('Error loading available files:', error);
-            showError('Failed to load available game files. Please ensure data files are in the data folder.');
+            JeopardyUtils.showFatalError(error.message);
+            // Disable the form if we can't load files
+            selectElement.disabled = true;
+            startButton.disabled = true;
         }
     }
 
@@ -116,7 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const selectedFile = selectElement.value;
         if (!selectedFile) {
-            showError('Please select a game file first.');
+            // This case should ideally not be hit if the button is disabled
+            JeopardyUtils.showFatalError('Please select a game from the list.');
             return;
         }
 
@@ -124,23 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = JeopardyUtils.createGameUrl(selectedFile);
     });
 
-    // --- Error Display ---
-    function showError(message) {
-        overlayContentElement.innerHTML = `
-            <div class="error-message">
-                <strong>Error:</strong><br>
-                ${message}
-            </div>
-        `;
-        overlayElement.classList.remove('hidden');
-
-        // Close overlay on click
-        const closeHandler = () => {
-            overlayElement.classList.add('hidden');
-            overlayElement.removeEventListener('click', closeHandler);
-        };
-        overlayElement.addEventListener('click', closeHandler);
-    }
+    // Error display is now handled by the centralized JeopardyUtils.showFatalError
 
     // --- Initialize ---
     loadAvailableFiles();
