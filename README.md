@@ -37,7 +37,7 @@ Your project folder should look like this:
 - The game selector will automatically detect and validate new files
 - Invalid files are automatically excluded with helpful error messages
 
-### 🤖 Automated File Management
+### Automated File Management
 
 This project includes GitHub Actions automation for seamless file management:
 
@@ -67,7 +67,7 @@ node generate-files-index.js
 
 ---
 
-### ⭐ Using an AI to Generate Your Questions
+### Using an AI to Generate Your Questions
 
 You can use any modern LLM (like ChatGPT, Claude, etc.) to automatically create JSON files for your game.
 
@@ -92,4 +92,4 @@ The JSON structure must follow these strict rules:
 Based on the materials I provide below, generate the complete game data JSON content.
 
 ---
-[PASTE YOUR TOPICS OR CLASS NOTES HERE. For example: "Create a Jeopardy board based on the following 5 topics: US History, Basic Chemistry, World Capitals, Shakespeare's Plays, and Simple Algebra."]
+[PASTE YOUR TOPICS OR CLASS NOTES HERE]
