@@ -1,0 +1,152 @@
+[
+    {
+        "topic": "LAYER 2 & 3 DEVICES",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This Layer 2 device connects devices on a local network and uses MAC addresses to forward frames.",
+                "question": "Switch"
+            },
+            {
+                "points": 200,
+                "answer": "This Layer 3 device connects different networks and uses IP addresses to forward packets.",
+                "question": "Router"
+            },
+            {
+                "points": 300,
+                "answer": "While a router creates a separate one per port, a basic switch places all ports in a single one of these domains.",
+                "question": "Broadcast Domain"
+            },
+            {
+                "points": 400,
+                "answer": "When a switch receives a frame for an unknown MAC address, it performs this action to all ports except the source port.",
+                "question": "Flooding"
+            },
+            {
+                "points": 500,
+                "answer": "This advanced switch can perform functions at both Layer 2 and Layer 3, making decisions based on MAC or IP addresses.",
+                "question": "Multilayer switch"
+            }
+        ]
+    },
+    {
+        "topic": "NETWORK SECURITY",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This appliance protects a trusted network from an untrusted one by filtering traffic based on a set of rules.",
+                "question": "Firewall"
+            },
+            {
+                "points": 200,
+                "answer": "This security system is 'passive' as it only monitors a copy of network traffic to detect intrusions and send alerts.",
+                "question": "Intrusion Detection System (IDS)"
+            },
+            {
+                "points": 300,
+                "answer": "Considered 'active', this security system sits inline with network traffic and can block or drop malicious packets.",
+                "question": "Intrusion Prevention System (IPS)"
+            },
+            {
+                "points": 400,
+                "answer": "This IDS/IPS detection method relies on a regularly updated database of known attack patterns.",
+                "question": "Signature-based detection"
+            },
+            {
+                "points": 500,
+                "answer": "Also known as behavior-based detection, this method establishes a baseline of normal traffic and flags significant deviations.",
+                "question": "Anomaly-based detection"
+            }
+        ]
+    },
+    {
+        "topic": "PERFORMANCE & AVAILABILITY",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This device distributes incoming network traffic across multiple servers to ensure high availability and reliability.",
+                "question": "Load Balancer"
+            },
+            {
+                "points": 200,
+                "answer": "This server acts as an intermediary for requests from clients, often to provide security, filtering, or caching.",
+                "question": "Proxy Server"
+            },
+            {
+                "points": 300,
+                "answer": "A key benefit of a proxy server where it stores copies of frequently accessed web content to serve it locally.",
+                "question": "Content Caching"
+            },
+            {
+                "points": 400,
+                "answer": "A geographically distributed network of servers that caches content close to end-users to reduce latency.",
+                "question": "Content Delivery Network (CDN)"
+            },
+            {
+                "points": 500,
+                "answer": "This type of proxy receives requests on behalf of servers and is often used with load balancing for scalability.",
+                "question": "Reverse Proxy"
+            }
+        ]
+    },
+    {
+        "topic": "STORAGE & WIRELESS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "A centralized storage device connected to a network, designed for file sharing among multiple users.",
+                "question": "Network-Attached Storage (NAS)"
+            },
+            {
+                "points": 200,
+                "answer": "This device allows wireless clients to connect to a wired network using radio waves.",
+                "question": "Access Point (AP)"
+            },
+            {
+                "points": 300,
+                "answer": "A high-speed, specialized network dedicated to connecting storage devices to servers using block-level storage.",
+                "question": "Storage Area Network (SAN)"
+            },
+            {
+                "points": 400,
+                "answer": "An IP-based storage networking standard where a client is the 'initiator' and the storage system is the 'target'.",
+                "question": "iSCSI"
+            },
+            {
+                "points": 500,
+                "answer": "This specialized device provides central management and control for a large number of 'lightweight' access points.",
+                "question": "Wireless LAN Controller (WLC)"
+            }
+        ]
+    },
+    {
+        "topic": "NETWORK FUNCTIONS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Provides a secure, encrypted tunnel over an untrusted network like the Internet.",
+                "question": "Virtual Private Network (VPN)"
+            },
+            {
+                "points": 200,
+                "answer": "A suite of technologies used to manage network resources and prioritize certain types of traffic, such as voice.",
+                "question": "Quality of Service (QoS)"
+            },
+            {
+                "points": 300,
+                "answer": "A field in an IP packet header that limits its lifespan on the network, preventing infinite routing loops.",
+                "question": "Time to Live (TTL)"
+            },
+            {
+                "points": 400,
+                "answer": "A quality issue addressed by QoS, it's the time required for a packet to travel from source to destination.",
+                "question": "Delay (or Latency)"
+            },
+            {
+                "points": 500,
+                "answer": "A QoS issue defined as the uneven or variable arrival time of packets in a stream.",
+                "question": "Jitter"
+            }
+        ]
+    }
+]

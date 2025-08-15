@@ -1,0 +1,152 @@
+[
+  {
+    "topic": "ROUTING & SWITCHING BASICS",
+    "clues": [
+      {
+        "points": 100,
+        "answer": "Layer 3 device that forwards based on logical network addresses and creates separate broadcast domains per port by default.",
+        "question": "Router"
+      },
+      {
+        "points": 200,
+        "answer": "Layer 2 device that learns MAC addresses and forwards frames only out the needed port, creating a separate collision domain per port.",
+        "question": "Switch"
+      },
+      {
+        "points": 300,
+        "answer": "Switch type that can make forwarding decisions using Layer 3 information and can serve as a broadcast domain boundary.",
+        "question": "Multilayer switch"
+      },
+      {
+        "points": 400,
+        "answer": "Protocol a host uses to discover the MAC address for a known IP on the same subnet before sending traffic like an SSH segment.",
+        "question": "ARP"
+      },
+      {
+        "points": 500,
+        "answer": "All ports on a Layer 2 switch share this by default unless VLANs are configured; routers do not forward these frames.",
+        "question": "Broadcast domain"
+      }
+    ]
+  },
+  {
+    "topic": "SECURITY APPLIANCES",
+    "clues": [
+      {
+        "points": 100,
+        "answer": "Network security device that typically allows inside-initiated sessions and blocks unsolicited inbound connections; often stateful.",
+        "question": "Firewall"
+      },
+      {
+        "points": 200,
+        "answer": "Technology that monitors for malicious or non‑policy activity and alerts but does not stop traffic by itself.",
+        "question": "IDS"
+      },
+      {
+        "points": 300,
+        "answer": "Inline device that can actively drop malicious packets to prevent attacks in real time.",
+        "question": "IPS"
+      },
+      {
+        "points": 400,
+        "answer": "Detection approach that matches traffic against a database of known patterns and must be routinely updated.",
+        "question": "Signature-based detection"
+      },
+      {
+        "points": 500,
+        "answer": "Detection technique that flags traffic deviating from a learned or defined normal profile; prone to false positives.",
+        "question": "Anomaly-based detection"
+      }
+    ]
+  },
+  {
+    "topic": "LOAD BALANCING & PROXIES",
+    "clues": [
+      {
+        "points": 100,
+        "answer": "Device or software that distributes client requests across multiple servers using methods like round‑robin or least connections.",
+        "question": "Load balancer"
+      },
+      {
+        "points": 200,
+        "answer": "Server that forwards client requests to the Internet on their behalf, hiding internal IPs and often caching content.",
+        "question": "Proxy server"
+      },
+      {
+        "points": 300,
+        "answer": "Variant that accepts requests on behalf of backend servers and replies to clients, often paired with caching and load balancing.",
+        "question": "Reverse proxy"
+      },
+      {
+        "points": 400,
+        "answer": "Periodic checks a distributor performs to avoid sending traffic to unresponsive or unhealthy backend nodes.",
+        "question": "Health checks"
+      },
+      {
+        "points": 500,
+        "answer": "Technique where previously retrieved web objects are served locally to subsequent clients to reduce WAN usage.",
+        "question": "Content caching"
+      }
+    ]
+  },
+  {
+    "topic": "STORAGE NETWORKING",
+    "clues": [
+      {
+        "points": 100,
+        "answer": "Centralized file storage device on the LAN, commonly using SMB/NFS and RAID for redundancy.",
+        "question": "Network-attached storage (NAS)"
+      },
+      {
+        "points": 200,
+        "answer": "High‑speed specialized network that connects storage devices to servers, historically using Fibre Channel.",
+        "question": "Storage area network (SAN)"
+      },
+      {
+        "points": 300,
+        "answer": "IP‑based protocol that carries SCSI commands over Ethernet using initiators and targets.",
+        "question": "iSCSI"
+      },
+      {
+        "points": 400,
+        "answer": "Technology that encapsulates Fibre Channel frames over Ethernet to converge LAN and SAN traffic, typically requiring 10‑Gbps links.",
+        "question": "FCoE"
+      },
+      {
+        "points": 500,
+        "answer": "Larger‑than‑standard Ethernet frames often enabled on iSCSI networks to improve efficiency.",
+        "question": "Jumbo frames"
+      }
+    ]
+  },
+  {
+    "topic": "WIRELESS & NETWORK FUNCTIONS",
+    "clues": [
+      {
+        "points": 100,
+        "answer": "Device that connects wireless clients to a wired network via radio; all associated clients share the same segment.",
+        "question": "Access point"
+      },
+      {
+        "points": 200,
+        "answer": "Centralized platform that configures, monitors, and manages lightweight APs.",
+        "question": "Wireless LAN controller (WLC)"
+      },
+      {
+        "points": 300,
+        "answer": "Encrypted tunnel over an untrusted network that provides privacy and integrity for remote access and site connectivity.",
+        "question": "VPN"
+      },
+      {
+        "points": 400,
+        "answer": "Suite of techniques that prioritizes delay‑sensitive applications like voice and video during congestion.",
+        "question": "QoS"
+      },
+      {
+        "points": 500,
+        "answer": "IP header field decremented at each hop to prevent packets from looping indefinitely; if it reaches zero, the packet is discarded.",
+        "question": "TTL"
+      }
+    ]
+  }
+]
