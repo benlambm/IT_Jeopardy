@@ -22,7 +22,7 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script: |
             # Navigate to web directory
-            cd /var/www/jeopardy || exit 1
+            cd /var/www/jeopardy.benlamb.net || exit 1
             
             # Pull latest changes
             echo "Pulling latest changes from GitHub..."
@@ -38,4 +38,4 @@ jobs:
             
             # Output success message
             echo "Deployment completed successfully at $(date)"
-            echo "IT Jeopardy is now updated on the VPS!"
+            echo "IT Jeopardy is now live at https://jeopardy.benlamb.net"
