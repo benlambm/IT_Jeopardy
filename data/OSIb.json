@@ -1,0 +1,52 @@
+[
+  {
+    "topic": "OSI LAYERS OVERVIEW",
+    "clues": [
+      { "points": 100, "answer": "Mnemonic starting with 'Please Do Not Throw Sausage Pizza Away'.", "question": "Mnemonic for OSI L1‑L7" },
+      { "points": 200, "answer": "Number of total layers in the OSI model.", "question": "Seven" },
+      { "points": 300, "answer": "Layer that provides end‑user services such as HTTP, SMTP, and SNMP.", "question": "Application (Layer 7)" },
+      { "points": 400, "answer": "Layer responsible for data representation including encryption like TLS and formats like JPEG.", "question": "Presentation (Layer 6)" },
+      { "points": 500, "answer": "Layer that sets up, coordinates, and terminates conversations between applications.", "question": "Session (Layer 5)" }
+    ]
+  },
+  {
+    "topic": "L2/L3 PROTOCOLS",
+    "clues": [
+      { "points": 100, "answer": "Protocol switches use to prevent loops by placing some ports into a blocking state.", "question": "STP (Spanning Tree Protocol)" },
+      { "points": 200, "answer": "Protocol a host uses to resolve a MAC address for a known IPv4 address.", "question": "ARP" },
+      { "points": 300, "answer": "Neighbor discovery and address autoconfiguration for IPv6.", "question": "NDP" },
+      { "points": 400, "answer": "Protocol used by routers to communicate reachability and form adjacencies in a link‑state domain.", "question": "OSPF" },
+      { "points": 500, "answer": "ICMPv6 process used for automatically assigning IPv6 addresses without a DHCPv6 server.", "question": "SLAAC" }
+    ]
+  },
+  {
+    "topic": "L4 TRANSPORT & PORTS",
+    "clues": [
+      { "points": 100, "answer": "Transport protocol used by DNS queries by default due to its low overhead.", "question": "UDP" },
+      { "points": 200, "answer": "Well‑known TCP port used for HTTPS.", "question": "443" },
+      { "points": 300, "answer": "Feature of TCP that ensures lost segments are resent and data is in order.", "question": "Reliability (ACKs and sequencing)" },
+      { "points": 400, "answer": "Term for controlling the rate of data transmission to prevent overwhelming the receiver.", "question": "Flow control" },
+      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Segment/Datagram" }
+    ]
+  },
+  {
+    "topic": "COMMON L7 PROTOCOLS",
+    "clues": [
+      { "points": 100, "answer": "Protocol used to retrieve web pages securely using TLS.", "question": "HTTPS" },
+      { "points": 200, "answer": "Protocol for sending e‑mail between servers; commonly TCP 25.", "question": "SMTP" },
+      { "points": 300, "answer": "Directory service protocol often used for centralized authentication and lookups.", "question": "LDAP" },
+      { "points": 400, "answer": "Protocol used to manage network devices via MIBs and OIDs.", "question": "SNMP" },
+      { "points": 500, "answer": "Mail protocol used by clients to retrieve messages while leaving them on the server.", "question": "IMAP" }
+    ]
+  },
+  {
+    "topic": "EXAM MINDSET & SCENARIOS",
+    "clues": [
+      { "points": 100, "answer": "If a user can ping by IP but not by hostname, the troubled layer and protocol are these.", "question": "Layer 7, DNS" },
+      { "points": 200, "answer": "If users on different VLANs cannot reach each other, the device/layer missing or misconfigured is this.", "question": "Router or L3 SVI (Layer 3)" },
+      { "points": 300, "answer": "High retransmissions and low throughput likely indicate issues at this OSI layer.", "question": "Layer 1 or Layer 2 (physical/cabling or duplex)" },
+      { "points": 400, "answer": "VoIP choppiness under congestion points to tuning at this layer and feature set.", "question": "Layer 4/7, QoS" },
+      { "points": 500, "answer": "A loop created by connecting two switch ports directly will primarily impact this layer and be mitigated by this protocol.", "question": "Layer 2, STP" }
+    ]
+  }
+]

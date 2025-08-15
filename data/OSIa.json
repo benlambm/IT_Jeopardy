@@ -1,0 +1,52 @@
+[
+  {
+    "topic": "PHYSICAL (L1)",
+    "clues": [
+      { "points": 100, "answer": "Connector used for Ethernet twisted‑pair cabling (8P8C).", "question": "RJ‑45" },
+      { "points": 200, "answer": "Copper cabling with four twisted pairs; comes as Cat 5e, Cat 6, Cat 6A, etc.", "question": "Twisted pair (UTP/STP)" },
+      { "points": 300, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Bits" },
+      { "points": 400, "answer": "OSI device that regenerates or amplifies signals without interpreting frames.", "question": "Repeater" },
+      { "points": 500, "answer": "Term describing signal loss over distance in cabling or wireless.", "question": "Attenuation" }
+    ]
+  },
+  {
+    "topic": "DATA LINK (L2)",
+    "clues": [
+      { "points": 100, "answer": "Sub‑layer responsible for addressing and access to the media on Ethernet.", "question": "MAC sublayer" },
+      { "points": 200, "answer": "Sub‑layer that handles framing and error detection.", "question": "LLC sublayer" },
+      { "points": 300, "answer": "Address type burned into a NIC and used for delivery on LANs.", "question": "MAC address" },
+      { "points": 400, "answer": "Protocol used by switches to prevent loops by blocking redundant links.", "question": "Spanning Tree Protocol (STP)" },
+      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Frame" }
+    ]
+  },
+  {
+    "topic": "NETWORK (L3)",
+    "clues": [
+      { "points": 100, "answer": "Primary protocol that provides logical addressing and routing across internetworks.", "question": "IP" },
+      { "points": 200, "answer": "32‑bit addressing scheme written in dotted‑decimal notation.", "question": "IPv4" },
+      { "points": 300, "answer": "Interior gateway protocol that uses link‑state advertisements and areas.", "question": "OSPF" },
+      { "points": 400, "answer": "Message protocol used for error reporting and diagnostics (e.g., echo request/reply).", "question": "ICMP" },
+      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Packet" }
+    ]
+  },
+  {
+    "topic": "TRANSPORT (L4)",
+    "clues": [
+      { "points": 100, "answer": "Connection‑oriented protocol that provides reliability, sequencing, and flow control.", "question": "TCP" },
+      { "points": 200, "answer": "Connectionless protocol offering low overhead and no guaranteed delivery.", "question": "UDP" },
+      { "points": 300, "answer": "Flow‑control mechanism in TCP using a variable‑size buffer.", "question": "Windowing" },
+      { "points": 400, "answer": "Process used to establish a reliable TCP session before data transfer.", "question": "Three‑way handshake" },
+      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Segment" }
+    ]
+  },
+  {
+    "topic": "UPPER LAYERS (L5‑L7)",
+    "clues": [
+      { "points": 100, "answer": "Layer that manages setup, maintenance, and teardown of dialogs between applications.", "question": "Session layer (Layer 5)" },
+      { "points": 200, "answer": "Layer responsible for data format translation, encryption, and compression.", "question": "Presentation layer (Layer 6)" },
+      { "points": 300, "answer": "Layer providing services to end‑user applications like HTTP, SMTP, and DNS.", "question": "Application layer (Layer 7)" },
+      { "points": 400, "answer": "Common Layer 7 protocol used for translating hostnames to IP addresses.", "question": "DNS" },
+      { "points": 500, "answer": "Classic file transfer protocol that operates at Layer 7 and uses TCP.", "question": "FTP" }
+    ]
+  }
+]
