@@ -5,16 +5,21 @@ A simple, self-contained Jeopardy game that runs in any modern web browser for c
 ### How to Use
 
 #### Quick Start (Single Game)
+
 1.  **Prepare Your Questions:** Create or edit your question set in a JSON file in the `data` folder.
 2.  **Run the Game:**
-  - Locally: Double-click the `index.html` file to open it in your browser.
-  - Hosted: Visit your deployed URL (e.g., GitHub Pages or any static site) and open `index.html`.
+
+- Locally: Double-click the `index.html` file to open it in your browser.
+- Hosted: Visit your deployed URL (e.g., GitHub Pages or any static site) and open `index.html`.
 
 #### Multiple Games (Recommended)
+
 1.  **Prepare Multiple Game Files:** Create multiple JSON files in the `data` folder (e.g., `science.json`, `history.json`, etc.).
 2.  **Game Selection:**
-  - Locally: Double-click the `new.html` file to open the game selector.
-  - Hosted: Visit your deployed URL and open `new.html`.
+
+- Locally: Double-click the `new.html` file to open the game selector.
+- Hosted: Visit your deployed URL and open `new.html`.
+
 3.  **Choose Your Game:** Select from available game files using the dropdown menu and click "START GAME".
 
 ### Deployment Options
@@ -44,8 +49,9 @@ Your project folder should look like this:
 ```
 
 #### Adding New Game Files
+
 - Create new `.json` files in the `data` folder following the same format
-- **Automatic Discovery**: 
+- **Automatic Discovery**:
   - GitHub Actions will auto-update `files.json` when you push changes
   - Or run `node generate-files-index.js` locally to regenerate the index
 - The game selector will automatically detect and validate new files
@@ -56,12 +62,15 @@ Your project folder should look like this:
 This project includes GitHub Actions automation for seamless file management:
 
 #### Automatic Index Generation
+
 - **Trigger**: Runs automatically when JSON files are added/modified in the `data` folder
 - **Process**: Validates all JSON files and updates `files.json` with valid games only
 - **Deployment**: GitHub Pages automatically serves the updated content
 
 #### Manual Index Generation
+
 For local development or manual updates:
+
 ```bash
 # Generate files.json locally
 node generate-files-index.js
@@ -74,6 +83,7 @@ node generate-files-index.js
 ```
 
 #### GitHub Pages Setup
+
 1. Go to your repository Settings → Pages
 2. Set Source to "GitHub Actions"
 3. The site will auto-deploy on every push to main branch
@@ -107,3 +117,4 @@ Based on the materials I provide below, generate the complete game data JSON con
 
 ---
 [PASTE YOUR TOPICS OR CLASS NOTES HERE]
+```
