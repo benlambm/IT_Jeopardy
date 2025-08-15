@@ -4,7 +4,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-IT Jeopardy is a zero-dependency, client-side classroom Jeopardy game that runs entirely in the browser. The game requires no server, build tools, or internet connection after initial load. It features automatic game discovery, GitHub Actions automation, and a clean separation between game data and presentation logic.
+IT Jeopardy is a zero-dependency, client-side classroom Jeopardy game that runs entirely in the browser. No backend or build tools are required. You can run it locally by opening the HTML files directly or deploy it to GitHub Pages or any static web server. It also works offline after the initial load. It features automatic game discovery, GitHub Actions automation, and a clean separation between game data and presentation logic.
 
 ## Architecture & Core Principles
 
@@ -12,7 +12,7 @@ IT Jeopardy is a zero-dependency, client-side classroom Jeopardy game that runs 
 - **No frameworks or libraries** - Pure HTML5, CSS3, and ES2022+ JavaScript
 - **No build steps** - All JavaScript runs directly in the browser
 - **Offline-capable** - Works without internet after first load
-- **Client-only** - No server required, just open `index.html` or `new.html`
+- **Client-only** - No server-side logic required. Open `index.html` or `new.html` locally, or host the same files on GitHub Pages or any static web server.
 
 ### File Structure & Responsibilities
 - `index.html` - Direct game launcher with minimal board skeleton
@@ -29,7 +29,7 @@ The game dynamically loads JSON data files from the `data/` folder. Each file mu
 
 ## Common Development Tasks
 
-### Run the Game Locally
+### Run the Game (Local or Hosted)
 ```bash
 # Option 1: Open game selector (recommended)
 open new.html
@@ -39,6 +39,13 @@ open index.html
 
 # Option 3: Direct game with specific data file
 open "index.html?data=your-game.json"
+```
+
+When hosted (e.g., GitHub Pages, Nginx/Apache), use the same paths via HTTPS:
+
+```
+https://<your-site>/new.html
+https://<your-site>/index.html?data=your-game.json
 ```
 
 ### Generate Files Index
@@ -107,7 +114,7 @@ node generate-files-index.js
 3. **index.html** → Loads specified JSON → Renders board → Handles gameplay
 4. Click flow: Show answer → Show question → Mark as answered
 
-### GitHub Actions Automation
+### GitHub Actions Automation & Hosting
 - **update-files-index.yml**: Auto-generates `files.json` when data files change
 - **deploy-pages.yml**: Deploys to GitHub Pages on push to main
 - Site available at: `https://[username].github.io/[repo]/new.html`

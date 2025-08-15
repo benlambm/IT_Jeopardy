@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Redirect to index.html with the selected file as a parameter
-        window.location.href = JeopardyUtils.createGameUrl(selectedFile);
+    // Redirect explicitly to index.html with the selected file as a parameter
+    window.location.href = `index.html?data=${encodeURIComponent(selectedFile)}`;
     });
 
     // Error display is now handled by the centralized JeopardyUtils.showFatalError

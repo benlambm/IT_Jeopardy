@@ -8,7 +8,7 @@ applyTo: "**"
 > You are *maintaining or extending* it, not starting from scratch.
 
 ## 1 Purpose  
-Keep the game **zero-dependency, client-only, offline-friendly**. Opening `index.html` must be enough to run it.
+Keep the game **zero-dependency, client-only, offline-friendly**. Opening `index.html` must be enough to run it locally, and the same files should run unmodified when hosted on GitHub Pages or any static web server.
 
 ## 2 Tech stack  
 - **HTML5** – structure  
@@ -45,4 +45,4 @@ When adding a feature (e.g., score tracking, multi-team support, settings page):
 5. Document any new user-visible behaviour in `README.md`.
 
 ## 7 Architectural ethos  
-Strive for resilient, modular MVPs that “just run” locally with the least setup—aligned with best practices in software system design, architecture, and full-stack quality.
+Strive for resilient, modular MVPs that “just run” with the least setup—whether opened locally or hosted as a static site—aligned with best practices in software system design, architecture, and full-stack quality.

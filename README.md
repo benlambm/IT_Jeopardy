@@ -1,17 +1,31 @@
 # IT Jeopardy Game for Classroom Learning
 
-A simple, self-contained Jeopardy game to run in a web browser for classroom learning. This application runs entirely offline after the first load and requires no server or internet connection to play.
+A simple, self-contained Jeopardy game that runs in any modern web browser for classroom learning. It’s client-only and offline-capable after the first load. You can run it locally by opening the files directly or host it on GitHub Pages or any static web server—no backend or build tools required.
 
 ### How to Use
 
 #### Quick Start (Single Game)
 1.  **Prepare Your Questions:** Create or edit your question set in a JSON file in the `data` folder.
-2.  **Run the Game:** Double-click the `index.html` file to open it in your preferred web browser.
+2.  **Run the Game:**
+  - Locally: Double-click the `index.html` file to open it in your browser.
+  - Hosted: Visit your deployed URL (e.g., GitHub Pages or any static site) and open `index.html`.
 
 #### Multiple Games (Recommended)
 1.  **Prepare Multiple Game Files:** Create multiple JSON files in the `data` folder (e.g., `science.json`, `history.json`, etc.).
-2.  **Game Selection:** Double-click the `new.html` file to open the game selector.
+2.  **Game Selection:**
+  - Locally: Double-click the `new.html` file to open the game selector.
+  - Hosted: Visit your deployed URL and open `new.html`.
 3.  **Choose Your Game:** Select from available game files using the dropdown menu and click "START GAME".
+
+### Deployment Options
+
+You can use any of the following, with identical behavior:
+
+- Local file: Open `new.html` or `index.html` directly (file://)
+- GitHub Pages: Serve the repository as a static site
+- Any static web server: Apache, Nginx, simple Node/express static hosting, or equivalent
+
+The app remains fully client-only and works offline after the initial load regardless of where it’s hosted.
 
 ### File Structure
 
