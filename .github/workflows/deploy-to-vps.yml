@@ -1,0 +1,41 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # Allow manual triggering from GitHub UI
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            # Navigate to web directory
+            cd /var/www/jeopardy || exit 1
+            
+            # Pull latest changes
+            echo "Pulling latest changes from GitHub..."
+            git pull origin main
+            
+            # Set proper permissions for web files
+            echo "Setting file permissions..."
+            find . -type f -name "*.html" -exec chmod 644 {} \;
+            find . -type f -name "*.js" -exec chmod 644 {} \;
+            find . -type f -name "*.css" -exec chmod 644 {} \;
+            find . -type f -name "*.json" -exec chmod 644 {} \;
+            find . -type d -exec chmod 755 {} \;
+            
+            # Output success message
+            echo "Deployment completed successfully at $(date)"
+            echo "IT Jeopardy is now updated on the VPS!"
