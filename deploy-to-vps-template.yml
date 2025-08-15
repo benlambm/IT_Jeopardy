@@ -23,7 +23,7 @@ jobs:
           script: |
             # IMPORTANT: Update this path to match your subdomain
             # For subdomain.benlamb.net, use /var/www/subdomain.benlamb.net
-            cd /var/www/SUBDOMAIN.benlamb.net || exit 1
+            cd /var/www/jeopardy.benlamb.net || exit 1
             
             # Pull latest changes
             echo "Pulling latest changes from GitHub..."
@@ -40,4 +40,4 @@ jobs:
             
             # Output success message
             echo "Deployment completed successfully at $(date)"
-            echo "Site is now live at https://SUBDOMAIN.benlamb.net"
+            echo "Site is now live at https://jeopardy.benlamb.net"
