@@ -1,0 +1,177 @@
+[
+    {
+        "topic": "Network Appliances",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Identify this device that forwards traffic between VLANs.",
+                "question": "Layer 3 switch",
+                "imageQuery": "Layer 3 switch"
+            },
+            {
+                "points": 200,
+                "answer": "This device sits at the edge and filters traffic based on rules.",
+                "question": "Firewall",
+                "imageQuery": "network firewall appliance"
+            },
+            {
+                "points": 300,
+                "answer": "Identify the device that terminates multiple VPN tunnels.",
+                "question": "VPN concentrator",
+                "imageQuery": "VPN concentrator appliance"
+            },
+            {
+                "points": 400,
+                "answer": "This appliance balances requests across multiple servers.",
+                "question": "Load balancer",
+                "imageQuery": "hardware load balancer"
+            },
+            {
+                "points": 500,
+                "answer": "Name the device that caches web content to reduce bandwidth.",
+                "question": "Proxy server",
+                "imageQuery": "web proxy appliance"
+            }
+        ]
+    },
+    {
+        "topic": "WAN & Edge",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Identify this device that connects local networks to ISPs.",
+                "question": "Router",
+                "imageQuery": "enterprise router front panel"
+            },
+            {
+                "points": 200,
+                "answer": "This device aggregates multiple cellular connections.",
+                "question": "4G/5G LTE gateway",
+                "imageQuery": "LTE router gateway"
+            },
+            {
+                "points": 300,
+                "answer": "Identify the device used for MPLS customer edge.",
+                "question": "CE router",
+                "imageQuery": "MPLS customer edge router"
+            },
+            {
+                "points": 400,
+                "answer": "This appliance provides SD-WAN overlays across links.",
+                "question": "SD-WAN edge",
+                "imageQuery": "SD-WAN edge device"
+            },
+            {
+                "points": 500,
+                "answer": "Hardware used to terminate CSU/DSU circuits historically.",
+                "question": "CSU/DSU",
+                "imageQuery": "CSU/DSU"
+            }
+        ]
+    },
+    {
+        "topic": "Monitoring & Security",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Identify the device used to mirror traffic for analysis.",
+                "question": "Network TAP",
+                "imageQuery": "network tap device"
+            },
+            {
+                "points": 200,
+                "answer": "This tool captures and analyzes packets.",
+                "question": "Packet analyzer",
+                "imageQuery": "packet analyzer appliance"
+            },
+            {
+                "points": 300,
+                "answer": "Appliance that detects malicious activity in real time.",
+                "question": "IDS/IPS",
+                "imageQuery": "intrusion detection system appliance"
+            },
+            {
+                "points": 400,
+                "answer": "Used to feed power and data over Ethernet.",
+                "question": "PoE injector",
+                "imageQuery": "PoE injector"
+            },
+            {
+                "points": 500,
+                "answer": "Device that offloads encryption for high-throughput TLS.",
+                "question": "SSL/TLS accelerator",
+                "imageQuery": "TLS accelerator appliance"
+            }
+        ]
+    },
+    {
+        "topic": "Racks & Power",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Identify this vertical hardware enclosure.",
+                "question": "19-inch rack",
+                "imageQuery": "19 inch server rack"
+            },
+            {
+                "points": 200,
+                "answer": "Provides conditioned power and battery backup.",
+                "question": "UPS",
+                "imageQuery": "rackmount UPS"
+            },
+            {
+                "points": 300,
+                "answer": "Power distribution in a rack.",
+                "question": "PDU",
+                "imageQuery": "rack PDU"
+            },
+            {
+                "points": 400,
+                "answer": "Hardware that organizes patch cables.",
+                "question": "Patch panel",
+                "imageQuery": "network patch panel"
+            },
+            {
+                "points": 500,
+                "answer": "Cooling system for dense racks.",
+                "question": "In-row cooling",
+                "imageQuery": "in-row cooling data center"
+            }
+        ]
+    },
+    {
+        "topic": "Virtual & Cloud",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Identify the software-defined network edge device.",
+                "question": "vRouter",
+                "imageQuery": "virtual router"
+            },
+            {
+                "points": 200,
+                "answer": "Virtual appliance doing firewalling.",
+                "question": "vFirewall",
+                "imageQuery": "virtual firewall"
+            },
+            {
+                "points": 300,
+                "answer": "WAN overlay delivered from cloud.",
+                "question": "Cloud-managed SD-WAN",
+                "imageQuery": "cloud sd-wan"
+            },
+            {
+                "points": 400,
+                "answer": "Telemetry collector at the edge.",
+                "question": "Flow collector",
+                "imageQuery": "netflow collector appliance"
+            },
+            {
+                "points": 500,
+                "answer": "Appliance that optimizes WAN bandwidth.",
+                "question": "WAN optimizer",
+                "imageQuery": "WAN optimization appliance"
+            }
+        ]
+    }
+]

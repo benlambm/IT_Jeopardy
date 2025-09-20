@@ -1,0 +1,177 @@
+[
+    {
+        "topic": "Ethernet Cables",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Flat copper cable with 8 conductors.",
+                "question": "Twisted pair (UTP)",
+                "imageQuery": "twisted pair ethernet cable"
+            },
+            {
+                "points": 200,
+                "answer": "Identify the category supporting 1 Gbps up to 100 m.",
+                "question": "Cat5e",
+                "imageQuery": "Cat5e cable"
+            },
+            {
+                "points": 300,
+                "answer": "Identify the category supporting 10 Gbps up to 55 m.",
+                "question": "Cat6",
+                "imageQuery": "Cat6 cable"
+            },
+            {
+                "points": 400,
+                "answer": "Shielded cable to reduce EMI.",
+                "question": "STP",
+                "imageQuery": "shielded twisted pair cable"
+            },
+            {
+                "points": 500,
+                "answer": "Cabling standard with 4 twisted pairs terminated to T568B.",
+                "question": "TIA/EIA-568B",
+                "imageQuery": "T568B wiring"
+            }
+        ]
+    },
+    {
+        "topic": "Coaxial",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Common coax used in cable internet.",
+                "question": "RG-6",
+                "imageQuery": "RG-6 coax cable"
+            },
+            {
+                "points": 200,
+                "answer": "Legacy Ethernet coax type.",
+                "question": "RG-58 (10BASE2)",
+                "imageQuery": "RG-58 coax 10BASE2"
+            },
+            {
+                "points": 300,
+                "answer": "Thicknet legacy standard.",
+                "question": "RG-8 (10BASE5)",
+                "imageQuery": "RG-8 coax 10BASE5"
+            },
+            {
+                "points": 400,
+                "answer": "Connector with bayonet coupling.",
+                "question": "BNC",
+                "imageQuery": "BNC connector coax"
+            },
+            {
+                "points": 500,
+                "answer": "Screw-on connector for TV and modems.",
+                "question": "F-type",
+                "imageQuery": "F connector coax"
+            }
+        ]
+    },
+    {
+        "topic": "Fiber Types",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Orange patch cable.",
+                "question": "Multimode OM2/OM3",
+                "imageQuery": "multimode fiber patch cable orange"
+            },
+            {
+                "points": 200,
+                "answer": "Yellow patch cable.",
+                "question": "Single-mode OS2",
+                "imageQuery": "single-mode fiber patch cable yellow"
+            },
+            {
+                "points": 300,
+                "answer": "Connector with ferrule 2.5mm.",
+                "question": "SC",
+                "imageQuery": "SC fiber connector close-up"
+            },
+            {
+                "points": 400,
+                "answer": "Duplex small-form connector.",
+                "question": "LC",
+                "imageQuery": "LC duplex connector"
+            },
+            {
+                "points": 500,
+                "answer": "Multi-fiber push-on connector.",
+                "question": "MPO/MTP",
+                "imageQuery": "MPO MTP connector"
+            }
+        ]
+    },
+    {
+        "topic": "Termination & Panels",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Wall outlet for Ethernet.",
+                "question": "Keystone jack",
+                "imageQuery": "ethernet keystone wall jack"
+            },
+            {
+                "points": 200,
+                "answer": "Front-of-rack cable organization.",
+                "question": "Patch panel",
+                "imageQuery": "network patch panel loaded"
+            },
+            {
+                "points": 300,
+                "answer": "Allows slack management above panel.",
+                "question": "Cable manager",
+                "imageQuery": "rack cable manager"
+            },
+            {
+                "points": 400,
+                "answer": "Standards-compliant color code for pinout.",
+                "question": "T568A/T568B",
+                "imageQuery": "T568A T568B wiring diagram"
+            },
+            {
+                "points": 500,
+                "answer": "Testing and certifying cable.",
+                "question": "Cable certifier",
+                "imageQuery": "cable certifier device"
+            }
+        ]
+    },
+    {
+        "topic": "Specialty Cables",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Copper delivering power and data.",
+                "question": "PoE cable",
+                "imageQuery": "PoE ethernet cable injector"
+            },
+            {
+                "points": 200,
+                "answer": "Direct device-to-device connection.",
+                "question": "Crossover cable",
+                "imageQuery": "ethernet crossover cable"
+            },
+            {
+                "points": 300,
+                "answer": "Shielded cable for industrial environments.",
+                "question": "Industrial Ethernet (STP)",
+                "imageQuery": "industrial ethernet cable shielded"
+            },
+            {
+                "points": 400,
+                "answer": "Outdoor-rated cable resistant to UV.",
+                "question": "Outdoor Ethernet",
+                "imageQuery": "outdoor ethernet cable UV"
+            },
+            {
+                "points": 500,
+                "answer": "Cable with stranded conductors for flexibility.",
+                "question": "Patch cable (stranded)",
+                "imageQuery": "ethernet patch cable stranded"
+            }
+        ]
+    }
+]
