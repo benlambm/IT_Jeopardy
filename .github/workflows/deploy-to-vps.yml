@@ -8,14 +8,21 @@ on:
 permissions:
   contents: write # allow the workflow to push an updated data/files.json
 
+concurrency:
+  group: "deploy-to-vps"
+  cancel-in-progress: true
+
 jobs:
   deploy:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          ref: main
+          fetch-depth: 0
           persist-credentials: true # keep token so we can push back changes
 
       - name: Setup Node.js
@@ -35,13 +42,13 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/files.json
             git commit -m "chore: auto-update data/files.json [skip ci]"
-            
-            # Pull latest changes and rebase our commit on top
-            echo "Pulling latest changes before push..."
-            git pull --rebase origin main
-            
-            # Now push the changes
-            git push
+
+            # Ensure we have the latest remote state and rebase cleanly
+            git fetch origin main
+            git rebase origin/main
+
+            # Push the exact commit we just created to main
+            git push origin HEAD:main
           fi
 
       - name: Deploy to VPS via SSH
@@ -57,7 +64,7 @@ jobs:
 
             # Pull latest changes
             echo "Pulling latest changes from GitHub..."
-            git pull origin main
+            git pull origin main || git pull origin master
 
             # Set proper permissions for web files
             echo "Setting file permissions..."
