@@ -4,32 +4,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify this device that forwards traffic between VLANs.",
-                "question": "Layer 3 switch",
+                "answer": "This advanced switch can route packets between different VLANs without needing an external router, combining Layer 2 and Layer 3 functions.",
+                "question": "What is a Layer 3 switch (multilayer switch)?",
                 "imageQuery": "Layer 3 switch"
             },
             {
                 "points": 200,
-                "answer": "This device sits at the edge and filters traffic based on rules.",
-                "question": "Firewall",
+                "answer": "This security appliance sits at the network perimeter, inspecting packets and blocking malicious traffic based on configured security rules.",
+                "question": "What is a firewall?",
                 "imageQuery": "network firewall appliance"
             },
             {
                 "points": 300,
-                "answer": "Identify the device that terminates multiple VPN tunnels.",
-                "question": "VPN concentrator",
+                "answer": "This dedicated appliance manages and terminates multiple VPN connections from remote users, providing secure access to corporate networks.",
+                "question": "What is a VPN concentrator?",
                 "imageQuery": "VPN concentrator appliance"
             },
             {
                 "points": 400,
-                "answer": "This appliance balances requests across multiple servers.",
-                "question": "Load balancer",
+                "answer": "This appliance distributes incoming network traffic across multiple backend servers to ensure no single server becomes overwhelmed.",
+                "question": "What is a hardware load balancer?",
                 "imageQuery": "hardware load balancer"
             },
             {
                 "points": 500,
-                "answer": "Name the device that caches web content to reduce bandwidth.",
-                "question": "Proxy server",
+                "answer": "This network appliance stores frequently accessed web content locally, reducing bandwidth usage and improving response times for users.",
+                "question": "What is a caching proxy server?",
                 "imageQuery": "web proxy appliance"
             }
         ]
@@ -39,32 +39,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify this device that connects local networks to ISPs.",
-                "question": "Router",
+                "answer": "This Layer 3 device connects your local network to your ISP, serving as the gateway between your LAN and the internet.",
+                "question": "What is an edge router?",
                 "imageQuery": "enterprise router front panel"
             },
             {
                 "points": 200,
-                "answer": "This device aggregates multiple cellular connections.",
-                "question": "4G/5G LTE gateway",
+                "answer": "This device combines multiple 4G/5G cellular connections for increased bandwidth and failover capability in areas without wired broadband.",
+                "question": "What is a 4G/5G LTE gateway?",
                 "imageQuery": "LTE router gateway"
             },
             {
                 "points": 300,
-                "answer": "Identify the device used for MPLS customer edge.",
-                "question": "CE router",
+                "answer": "This router sits at the customer premises and connects to the service provider's MPLS network for private WAN connectivity.",
+                "question": "What is a CE (Customer Edge) router?",
                 "imageQuery": "MPLS customer edge router"
             },
             {
                 "points": 400,
-                "answer": "This appliance provides SD-WAN overlays across links.",
-                "question": "SD-WAN edge",
+                "answer": "This appliance creates software-defined WAN connections over multiple transport links, optimizing traffic flow and reducing MPLS costs.",
+                "question": "What is an SD-WAN edge device?",
                 "imageQuery": "SD-WAN edge device"
             },
             {
                 "points": 500,
-                "answer": "Hardware used to terminate CSU/DSU circuits historically.",
-                "question": "CSU/DSU",
+                "answer": "This legacy device converted digital signals from the LAN to the format required by T1/T3 leased lines from the telco.",
+                "question": "What is a CSU/DSU (Channel/Data Service Unit)?",
                 "imageQuery": "CSU/DSU"
             }
         ]
