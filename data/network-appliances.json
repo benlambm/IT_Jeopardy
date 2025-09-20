@@ -74,32 +74,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify the device used to mirror traffic for analysis.",
-                "question": "Network TAP",
+                "answer": "This passive device copies all network traffic passing through it to a monitoring port for analysis without affecting the data flow.",
+                "question": "What is a network TAP (Test Access Point)?",
                 "imageQuery": "network tap device"
             },
             {
                 "points": 200,
-                "answer": "This tool captures and analyzes packets.",
-                "question": "Packet analyzer",
+                "answer": "This hardware appliance captures network packets for deep inspection, protocol analysis, and troubleshooting network issues.",
+                "question": "What is a packet analyzer (packet sniffer)?",
                 "imageQuery": "packet analyzer appliance"
             },
             {
                 "points": 300,
-                "answer": "Appliance that detects malicious activity in real time.",
-                "question": "IDS/IPS",
+                "answer": "These security appliances monitor network traffic for malicious activity, with one alerting and the other actively blocking threats.",
+                "question": "What are IDS/IPS (Intrusion Detection/Prevention Systems)?",
                 "imageQuery": "intrusion detection system appliance"
             },
             {
                 "points": 400,
-                "answer": "Used to feed power and data over Ethernet.",
-                "question": "PoE injector",
+                "answer": "This device adds Power over Ethernet capability to non-PoE switches, delivering up to 90W to devices like APs and IP cameras.",
+                "question": "What is a PoE injector (midspan)?",
                 "imageQuery": "PoE injector"
             },
             {
                 "points": 500,
-                "answer": "Device that offloads encryption for high-throughput TLS.",
-                "question": "SSL/TLS accelerator",
+                "answer": "This hardware appliance offloads CPU-intensive SSL/TLS encryption and decryption, improving web server performance.",
+                "question": "What is an SSL/TLS accelerator?",
                 "imageQuery": "TLS accelerator appliance"
             }
         ]
@@ -109,32 +109,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify this vertical hardware enclosure.",
-                "question": "19-inch rack",
+                "answer": "This standardized equipment enclosure is 19 inches wide and typically 42U tall, housing servers, switches, and other network gear.",
+                "question": "What is a 19-inch server rack?",
                 "imageQuery": "19 inch server rack"
             },
             {
                 "points": 200,
-                "answer": "Provides conditioned power and battery backup.",
-                "question": "UPS",
+                "answer": "This device provides battery backup power and surge protection, keeping critical equipment running during power outages.",
+                "question": "What is a UPS (Uninterruptible Power Supply)?",
                 "imageQuery": "rackmount UPS"
             },
             {
                 "points": 300,
-                "answer": "Power distribution in a rack.",
-                "question": "PDU",
+                "answer": "This rack-mounted device distributes power from a single source to multiple outlets, often with remote monitoring capabilities.",
+                "question": "What is a PDU (Power Distribution Unit)?",
                 "imageQuery": "rack PDU"
             },
             {
                 "points": 400,
-                "answer": "Hardware that organizes patch cables.",
-                "question": "Patch panel",
+                "answer": "This organized termination panel provides connection points for horizontal cabling runs, typically with 24 or 48 ports.",
+                "question": "What is a patch panel?",
                 "imageQuery": "network patch panel"
             },
             {
                 "points": 500,
-                "answer": "Cooling system for dense racks.",
-                "question": "In-row cooling",
+                "answer": "This precision cooling system sits between server racks, providing targeted cooling for high-density data center deployments.",
+                "question": "What is in-row cooling?",
                 "imageQuery": "in-row cooling data center"
             }
         ]
@@ -144,32 +144,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify the software-defined network edge device.",
-                "question": "vRouter",
+                "answer": "This software-based router runs as a virtual machine or container, providing routing functions without dedicated hardware.",
+                "question": "What is a virtual router (vRouter)?",
                 "imageQuery": "virtual router"
             },
             {
                 "points": 200,
-                "answer": "Virtual appliance doing firewalling.",
-                "question": "vFirewall",
+                "answer": "This virtualized security appliance provides firewall protection within virtual environments and cloud infrastructures.",
+                "question": "What is a virtual firewall (vFirewall)?",
                 "imageQuery": "virtual firewall"
             },
             {
                 "points": 300,
-                "answer": "WAN overlay delivered from cloud.",
-                "question": "Cloud-managed SD-WAN",
+                "answer": "This cloud-based service manages and orchestrates SD-WAN deployments across multiple sites from a centralized portal.",
+                "question": "What is cloud-managed SD-WAN?",
                 "imageQuery": "cloud sd-wan"
             },
             {
                 "points": 400,
-                "answer": "Telemetry collector at the edge.",
-                "question": "Flow collector",
+                "answer": "This appliance collects and analyzes NetFlow, sFlow, or IPFIX data to provide visibility into network traffic patterns.",
+                "question": "What is a flow collector?",
                 "imageQuery": "netflow collector appliance"
             },
             {
                 "points": 500,
-                "answer": "Appliance that optimizes WAN bandwidth.",
-                "question": "WAN optimizer",
+                "answer": "This appliance uses deduplication, compression, and caching to reduce WAN bandwidth usage and improve application performance.",
+                "question": "What is a WAN optimizer (WAN acceleration appliance)?",
                 "imageQuery": "WAN optimization appliance"
             }
         ]

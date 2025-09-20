@@ -2,50 +2,50 @@
   {
     "topic": "PAN",
     "clues": [
-      { "points": 100, "answer": "Very short‑range network centered around a single person; phone ↔ headset/smartwatch within a few meters.", "question": "Personal Area Network (PAN)" },
-      { "points": 200, "answer": "Common WPAN technology used for headsets, keyboards, and file transfers.", "question": "Bluetooth" },
-      { "points": 300, "answer": "Short‑range, tap‑to‑pay and pairing technology operating at a few centimeters.", "question": "NFC" },
-      { "points": 400, "answer": "Sharing a smartphone’s cellular data connection with nearby devices over Wi‑Fi or USB creates this kind of ad‑hoc PAN.", "question": "Tethering (Mobile Hotspot)" },
-      { "points": 500, "answer": "Low‑power mesh WPAN commonly used for home automation sensors and IoT.", "question": "Zigbee" }
+      { "points": 100, "answer": "This network type operates within a 10-meter range around an individual, connecting personal devices like smartphones, earbuds, and fitness trackers.", "question": "What is a PAN (Personal Area Network)?" },
+      { "points": 200, "answer": "This 2.4 GHz wireless technology connects devices within 10 meters using frequency hopping, commonly used for wireless headsets and keyboards.", "question": "What is Bluetooth?" },
+      { "points": 300, "answer": "This ultra-short-range technology (4cm or less) enables contactless payments and instant device pairing by tapping devices together.", "question": "What is NFC (Near Field Communication)?" },
+      { "points": 400, "answer": "This feature allows a smartphone to share its cellular data connection with other devices, creating a small personal network via Wi-Fi or USB.", "question": "What is tethering or mobile hotspot?" },
+      { "points": 500, "answer": "This low-power, mesh networking protocol operates on 2.4 GHz and is widely used for smart home devices and IoT sensors.", "question": "What is Zigbee?" }
     ]
   },
   {
     "topic": "LAN",
     "clues": [
-      { "points": 100, "answer": "Network covering a home, office, or building; typically Ethernet/Wi‑Fi with high local speeds.", "question": "Local Area Network (LAN)" },
-      { "points": 200, "answer": "A LAN implemented with Wi‑Fi instead of wired Ethernet.", "question": "WLAN" },
-      { "points": 300, "answer": "Typical maximum copper Ethernet run length for a single segment.", "question": "100 meters (328 ft)" },
-      { "points": 400, "answer": "Logical segmentation within a switch that isolates broadcast domains.", "question": "VLAN" },
-      { "points": 500, "answer": "Layer 2 device that forwards frames using MAC address tables.", "question": "Switch" }
+      { "points": 100, "answer": "This network type connects devices within a single building or campus, providing high-speed communication via Ethernet or Wi-Fi technologies.", "question": "What is a LAN (Local Area Network)?" },
+      { "points": 200, "answer": "This type of LAN uses 802.11 wireless standards instead of cables, allowing mobile devices to connect without physical connections.", "question": "What is a WLAN (Wireless LAN)?" },
+      { "points": 300, "answer": "This is the maximum distance for a single copper Ethernet cable run according to TIA/EIA standards, equivalent to 328 feet.", "question": "What is 100 meters?" },
+      { "points": 400, "answer": "This technology creates multiple logical networks on a single physical switch, segregating traffic and broadcast domains using 802.1Q tags.", "question": "What is a VLAN (Virtual LAN)?" },
+      { "points": 500, "answer": "This Layer 2 device learns MAC addresses dynamically and forwards Ethernet frames based on its MAC address table.", "question": "What is a network switch?" }
     ]
   },
   {
     "topic": "MAN/CAN",
     "clues": [
-      { "points": 100, "answer": "Network larger than a LAN but smaller than a WAN; spans a city or large campus.", "question": "MAN (Metropolitan Area Network)" },
-      { "points": 200, "answer": "Network interconnecting multiple buildings across a university or corporate property.", "question": "CAN (Campus Area Network)" },
-      { "points": 300, "answer": "Common provider service used to connect sites across a metro area at Layer 2 or 3.", "question": "Metro Ethernet" },
-      { "points": 400, "answer": "High‑speed fiber core that interconnects distribution/access across a campus.", "question": "Campus backbone" },
-      { "points": 500, "answer": "Provider technology offering multipoint Layer 2 service across a metro region (often built on MPLS).", "question": "VPLS" }
+      { "points": 100, "answer": "This network type spans an entire city or metropolitan area (up to 50km), connecting multiple LANs using high-speed fiber optic links.", "question": "What is a MAN (Metropolitan Area Network)?" },
+      { "points": 200, "answer": "This network type interconnects multiple buildings across a university or corporate campus, typically owned and operated by a single organization.", "question": "What is a CAN (Campus Area Network)?" },
+      { "points": 300, "answer": "This carrier service provides high-speed Ethernet connectivity between locations within a metropolitan area, offering speeds from 10Mbps to 10Gbps.", "question": "What is Metro Ethernet?" },
+      { "points": 400, "answer": "This high-speed fiber infrastructure serves as the main data pathway connecting distribution and access layers across a campus network.", "question": "What is a campus backbone?" },
+      { "points": 500, "answer": "This Layer 2 VPN service creates a virtual bridge connecting multiple sites across a provider's network, allowing any-to-any communication.", "question": "What is VPLS (Virtual Private LAN Service)?" }
     ]
   },
   {
     "topic": "WAN",
     "clues": [
-      { "points": 100, "answer": "Interconnects LANs over cities, countries, or continents; typically uses service provider links.", "question": "Wide Area Network (WAN)" },
-      { "points": 200, "answer": "Customer‑premises device that terminates WAN circuits and routes between LAN and provider.", "question": "Edge router" },
-      { "points": 300, "answer": "Provider‑managed, label‑switched service widely used for site‑to‑site VPNs.", "question": "MPLS" },
-      { "points": 400, "answer": "Enterprise‑owned, global network built with leased/dedicated links between data centers.", "question": "Private WAN" },
-      { "points": 500, "answer": "The world’s largest WAN composed of interconnected networks.", "question": "Internet" }
+      { "points": 100, "answer": "This network type connects LANs across vast geographic distances using leased lines, MPLS, or internet VPNs from service providers.", "question": "What is a WAN (Wide Area Network)?" },
+      { "points": 200, "answer": "This router sits at the customer premises, terminating WAN circuits and serving as the boundary between the LAN and service provider network.", "question": "What is an edge router (CE router)?" },
+      { "points": 300, "answer": "This packet-forwarding technology uses labels instead of IP addresses, providing traffic engineering and QoS for enterprise VPNs.", "question": "What is MPLS (Multiprotocol Label Switching)?" },
+      { "points": 400, "answer": "This type of WAN uses dedicated leased lines between corporate locations, providing guaranteed bandwidth and security but at high cost.", "question": "What is a private WAN?" },
+      { "points": 500, "answer": "This global network of interconnected networks uses TCP/IP protocols and is the world's largest WAN.", "question": "What is the Internet?" }
     ]
   },
   {
     "topic": "SAN",
     "clues": [
-      { "points": 100, "answer": "Specialized, high‑speed network that provides block‑level storage to servers.", "question": "Storage Area Network (SAN)" },
-      { "points": 200, "answer": "IP‑based protocol that carries SCSI commands over Ethernet using initiators and targets.", "question": "iSCSI" },
-      { "points": 300, "answer": "Technology that encapsulates Fibre Channel frames over Ethernet.", "question": "FCoE" },
-      { "points": 400, "answer": "Dedicated storage fabric and switches traditionally used in SANs.", "question": "Fibre Channel" },
-      { "points": 500, "answer": "Larger‑than‑standard Ethernet frames often enabled to improve iSCSI efficiency.", "question": "Jumbo frames" }
+      { "points": 100, "answer": "This dedicated high-speed network provides block-level storage access to servers, making remote storage appear as locally attached disks.", "question": "What is a SAN (Storage Area Network)?" },
+      { "points": 200, "answer": "This IP-based storage protocol encapsulates SCSI commands in TCP packets, with servers as 'initiators' and storage as 'targets'.", "question": "What is iSCSI (Internet Small Computer Systems Interface)?" },
+      { "points": 300, "answer": "This protocol carries Fibre Channel storage traffic over 10Gb+ Ethernet, converging data and storage networks onto shared infrastructure.", "question": "What is FCoE (Fibre Channel over Ethernet)?" },
+      { "points": 400, "answer": "This dedicated storage networking technology uses special HBAs and switches, providing speeds from 2 to 128 Gbps for SANs.", "question": "What is Fibre Channel?" },
+      { "points": 500, "answer": "These oversized Ethernet frames (up to 9000 bytes MTU) reduce overhead and improve performance for storage protocols like iSCSI.", "question": "What are jumbo frames?" }
     ]}
 ]

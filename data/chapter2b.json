@@ -4,28 +4,28 @@
     "clues": [
       {
         "points": 100,
-        "answer": "Layer 3 device that forwards based on logical network addresses and creates separate broadcast domains per port by default.",
-        "question": "Router"
+        "answer": "This Layer 3 device uses IP addresses and routing tables to forward packets between networks, creating separate broadcast domains on each interface.",
+        "question": "What is a router?"
       },
       {
         "points": 200,
-        "answer": "Layer 2 device that learns MAC addresses and forwards frames only out the needed port, creating a separate collision domain per port.",
-        "question": "Switch"
+        "answer": "This Layer 2 device builds a MAC address table by learning source addresses, then forwards frames only to the specific port where the destination MAC resides.",
+        "question": "What is a network switch?"
       },
       {
         "points": 300,
-        "answer": "Switch type that can make forwarding decisions using Layer 3 information and can serve as a broadcast domain boundary.",
-        "question": "Multilayer switch"
+        "answer": "This advanced switch combines Layer 2 switching with Layer 3 routing capabilities, allowing it to route between VLANs without an external router.",
+        "question": "What is a multilayer (Layer 3) switch?"
       },
       {
         "points": 400,
-        "answer": "Protocol a host uses to discover the MAC address for a known IP on the same subnet before sending traffic like an SSH segment.",
-        "question": "ARP"
+        "answer": "This protocol broadcasts a request asking 'who has this IP address?' to discover the MAC address needed for local network communication.",
+        "question": "What is ARP (Address Resolution Protocol)?"
       },
       {
         "points": 500,
-        "answer": "All ports on a Layer 2 switch share this by default unless VLANs are configured; routers do not forward these frames.",
-        "question": "Broadcast domain"
+        "answer": "This network segment encompasses all devices that receive broadcast frames - switches extend it while routers segment it at boundaries.",
+        "question": "What is a broadcast domain?"
       }
     ]
   },
@@ -34,28 +34,28 @@
     "clues": [
       {
         "points": 100,
-        "answer": "Network security device that typically allows inside-initiated sessions and blocks unsolicited inbound connections; often stateful.",
-        "question": "Firewall"
+        "answer": "This stateful security device tracks connection states, typically allowing outbound connections while blocking unsolicited inbound traffic from untrusted networks.",
+        "question": "What is a firewall?"
       },
       {
         "points": 200,
-        "answer": "Technology that monitors for malicious or non‑policy activity and alerts but does not stop traffic by itself.",
-        "question": "IDS"
+        "answer": "This passive security system monitors network traffic via port mirroring or network taps, alerting administrators to suspicious activity without blocking it.",
+        "question": "What is an IDS (Intrusion Detection System)?"
       },
       {
         "points": 300,
-        "answer": "Inline device that can actively drop malicious packets to prevent attacks in real time.",
-        "question": "IPS"
+        "answer": "This inline security device sits in the traffic path, analyzing packets in real-time and automatically blocking detected threats before they reach targets.",
+        "question": "What is an IPS (Intrusion Prevention System)?"
       },
       {
         "points": 400,
-        "answer": "Detection approach that matches traffic against a database of known patterns and must be routinely updated.",
-        "question": "Signature-based detection"
+        "answer": "This detection method compares traffic patterns against a regularly updated database of known attack signatures and malware fingerprints.",
+        "question": "What is signature-based detection?"
       },
       {
         "points": 500,
-        "answer": "Detection technique that flags traffic deviating from a learned or defined normal profile; prone to false positives.",
-        "question": "Anomaly-based detection"
+        "answer": "This detection method establishes baseline behavior patterns then alerts on statistical deviations, catching zero-day attacks but generating more false positives.",
+        "question": "What is anomaly-based (behavioral) detection?"
       }
     ]
   },
@@ -64,28 +64,28 @@
     "clues": [
       {
         "points": 100,
-        "answer": "Device or software that distributes client requests across multiple servers using methods like round‑robin or least connections.",
-        "question": "Load balancer"
+        "answer": "This device distributes incoming requests across multiple backend servers using algorithms like round-robin, least connections, or weighted distribution to prevent overload.",
+        "question": "What is a load balancer?"
       },
       {
         "points": 200,
-        "answer": "Server that forwards client requests to the Internet on their behalf, hiding internal IPs and often caching content.",
-        "question": "Proxy server"
+        "answer": "This intermediary server makes internet requests on behalf of internal clients, hiding their IP addresses and often caching frequently accessed content.",
+        "question": "What is a forward proxy server?"
       },
       {
         "points": 300,
-        "answer": "Variant that accepts requests on behalf of backend servers and replies to clients, often paired with caching and load balancing.",
-        "question": "Reverse proxy"
+        "answer": "This proxy type sits in front of web servers, accepting client requests and forwarding them to backend servers while providing load balancing and SSL termination.",
+        "question": "What is a reverse proxy?"
       },
       {
         "points": 400,
-        "answer": "Periodic checks a distributor performs to avoid sending traffic to unresponsive or unhealthy backend nodes.",
-        "question": "Health checks"
+        "answer": "These automated tests verify server availability by sending periodic HTTP, TCP, or ping requests to ensure traffic isn't sent to failed servers.",
+        "question": "What are health checks (health probes)?"
       },
       {
         "points": 500,
-        "answer": "Technique where previously retrieved web objects are served locally to subsequent clients to reduce WAN usage.",
-        "question": "Content caching"
+        "answer": "This bandwidth-saving technique stores copies of frequently requested web content locally, serving it directly to users without fetching from origin servers.",
+        "question": "What is content caching?"
       }
     ]
   },
@@ -94,28 +94,28 @@
     "clues": [
       {
         "points": 100,
-        "answer": "Centralized file storage device on the LAN, commonly using SMB/NFS and RAID for redundancy.",
-        "question": "Network-attached storage (NAS)"
+        "answer": "This file-level storage appliance connects to your LAN, sharing folders via SMB/CIFS or NFS protocols, often using RAID for data redundancy.",
+        "question": "What is NAS (Network-Attached Storage)?"
       },
       {
         "points": 200,
-        "answer": "High‑speed specialized network that connects storage devices to servers, historically using Fibre Channel.",
-        "question": "Storage area network (SAN)"
+        "answer": "This dedicated high-speed network provides block-level storage to servers, making remote disks appear as locally attached using Fibre Channel or iSCSI.",
+        "question": "What is a SAN (Storage Area Network)?"
       },
       {
         "points": 300,
-        "answer": "IP‑based protocol that carries SCSI commands over Ethernet using initiators and targets.",
-        "question": "iSCSI"
+        "answer": "This IP-based storage protocol encapsulates SCSI commands in TCP/IP packets, with servers acting as 'initiators' connecting to storage 'targets'.",
+        "question": "What is iSCSI (Internet Small Computer Systems Interface)?"
       },
       {
         "points": 400,
-        "answer": "Technology that encapsulates Fibre Channel frames over Ethernet to converge LAN and SAN traffic, typically requiring 10‑Gbps links.",
-        "question": "FCoE"
+        "answer": "This protocol carries Fibre Channel storage traffic over 10Gb+ Ethernet networks, converging data and storage networks onto unified infrastructure.",
+        "question": "What is FCoE (Fibre Channel over Ethernet)?"
       },
       {
         "points": 500,
-        "answer": "Larger‑than‑standard Ethernet frames often enabled on iSCSI networks to improve efficiency.",
-        "question": "Jumbo frames"
+        "answer": "These oversized Ethernet frames (up to 9000 bytes instead of 1500) reduce overhead and improve throughput for storage protocols like iSCSI.",
+        "question": "What are jumbo frames?"
       }
     ]
   },
@@ -124,28 +124,28 @@
     "clues": [
       {
         "points": 100,
-        "answer": "Device that connects wireless clients to a wired network via radio; all associated clients share the same segment.",
-        "question": "Access point"
+        "answer": "This wireless device broadcasts SSIDs and bridges Wi-Fi clients to the wired network, with all connected clients sharing the same collision domain.",
+        "question": "What is a wireless access point (WAP)?"
       },
       {
         "points": 200,
-        "answer": "Centralized platform that configures, monitors, and manages lightweight APs.",
-        "question": "Wireless LAN controller (WLC)"
+        "answer": "This centralized management platform configures, monitors, and controls multiple lightweight access points, handling roaming and security policies.",
+        "question": "What is a WLC (Wireless LAN Controller)?"
       },
       {
         "points": 300,
-        "answer": "Encrypted tunnel over an untrusted network that provides privacy and integrity for remote access and site connectivity.",
-        "question": "VPN"
+        "answer": "This technology creates encrypted tunnels through public networks, allowing remote workers to securely access corporate resources as if locally connected.",
+        "question": "What is a VPN (Virtual Private Network)?"
       },
       {
         "points": 400,
-        "answer": "Suite of techniques that prioritizes delay‑sensitive applications like voice and video during congestion.",
-        "question": "QoS"
+        "answer": "This traffic management system prioritizes time-sensitive data like VoIP and video streaming over bulk transfers during network congestion.",
+        "question": "What is QoS (Quality of Service)?"
       },
       {
         "points": 500,
-        "answer": "IP header field decremented at each hop to prevent packets from looping indefinitely; if it reaches zero, the packet is discarded.",
-        "question": "TTL"
+        "answer": "This IP packet field starts at 255 and decreases by 1 at each router, preventing infinite loops by discarding packets when it reaches zero.",
+        "question": "What is TTL (Time to Live)?"
       }
     ]
   }

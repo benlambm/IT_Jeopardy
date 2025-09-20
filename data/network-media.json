@@ -4,14 +4,14 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify this twisted pair cable type used in modern Ethernet.",
-                "question": "Cat6 Ethernet cable",
+                "answer": "This twisted pair cable category supports speeds up to 10 Gbps at 250 MHz frequency for distances up to 55 meters, commonly used in modern LANs.",
+                "question": "What is Cat6 Ethernet cable?",
                 "imageQuery": "Category:Cat6 cables"
             },
             {
                 "points": 200,
-                "answer": "This connector terminates coaxial cable for cable internet service.",
-                "question": "F-type connector",
+                "answer": "This threaded coaxial connector is the standard for connecting cable modems and set-top boxes to cable TV infrastructure.",
+                "question": "What is an F-type connector?",
                 "images": [
                     "https://upload.wikimedia.org/wikipedia/commons/0/0b/F_connector_%28female%29.jpg",
                     "https://upload.wikimedia.org/wikipedia/commons/9/9b/F-connector.jpg"
@@ -20,8 +20,8 @@
             },
             {
                 "points": 300,
-                "answer": "Name the fiber optic connector shown.",
-                "question": "LC connector",
+                "answer": "This small form-factor fiber optic connector with a 1.25mm ferrule provides high-density connectivity in data centers and telecom applications.",
+                "question": "What is an LC (Lucent Connector)?",
                 "images": [
                     "https://upload.wikimedia.org/wikipedia/commons/5/53/LC_connector.jpg"
                 ],
@@ -29,14 +29,14 @@
             },
             {
                 "points": 400,
-                "answer": "Identify the fiber cable type by its orange jacket color.",
-                "question": "Multimode fiber",
+                "answer": "This fiber optic cable type uses an orange jacket and has a larger 50-62.5 micron core, supporting shorter distances than single-mode.",
+                "question": "What is multimode fiber?",
                 "imageQuery": "orange jacket multimode fiber patch cable"
             },
             {
                 "points": 500,
-                "answer": "What kind of cable is used to connect a console port on a router?",
-                "question": "RJ45 to DB9 rollover (console) cable",
+                "answer": "This special serial cable with rolled pin configuration connects a computer's serial port to a network device's console port for management access.",
+                "question": "What is a rollover/console cable?",
                 "imageQuery": "Cisco console cable RJ45 DB9"
             }
         ]
@@ -46,32 +46,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify the tool used to terminate wires into a punchdown block.",
-                "question": "110 punchdown tool",
+                "answer": "This spring-loaded impact tool punches individual wires into IDC terminals on patch panels and keystone jacks while trimming excess wire.",
+                "question": "What is a 110 punchdown tool?",
                 "imageQuery": "110 punchdown tool"
             },
             {
                 "points": 200,
-                "answer": "This tool is used to attach RJ-45 connectors to Ethernet cables.",
-                "question": "Crimping tool",
+                "answer": "This specialized plier compresses RJ-45 connectors onto twisted pair cables, creating permanent terminations for patch cables.",
+                "question": "What is an RJ-45 crimping tool?",
                 "imageQuery": "RJ45 crimping tool"
             },
             {
                 "points": 300,
-                "answer": "Name the device used to locate a cable by tone and probe.",
-                "question": "Fox and hound (tone generator and probe)",
+                "answer": "This two-part tool set sends an audible tone through a cable, allowing technicians to trace and identify specific wires in bundles.",
+                "question": "What is a tone generator and probe (toner)?",
                 "imageQuery": "tone generator and probe network"
             },
             {
                 "points": 400,
-                "answer": "Identify the tool used to test cable continuity and mapping.",
-                "question": "Cable tester",
+                "answer": "This handheld device verifies proper pin-to-pin connectivity and can detect opens, shorts, and crossed pairs in network cables.",
+                "question": "What is a cable tester?",
                 "imageQuery": "Ethernet cable tester"
             },
             {
                 "points": 500,
-                "answer": "Identify the block used for telephone cabling in legacy installs.",
-                "question": "66 block",
+                "answer": "This legacy punch-down block with split metal teeth was commonly used for analog telephone connections in telecommunications closets.",
+                "question": "What is a 66 block?",
                 "imageQuery": "66 punch down block"
             }
         ]
@@ -81,8 +81,8 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Name this 8P8C modular connector commonly misnamed.",
-                "question": "RJ-45",
+                "answer": "This 8-position, 8-contact modular connector is technically called 8P8C but commonly referred to by this registered jack designation.",
+                "question": "What is an RJ-45 connector?",
                 "images": [
                     "https://upload.wikimedia.org/wikipedia/commons/2/27/RJ45_8P8C_connector_p1180504.jpg"
                 ],
@@ -90,26 +90,26 @@
             },
             {
                 "points": 200,
-                "answer": "Identify this bayonet-style coax connector used in older networks.",
-                "question": "BNC connector",
+                "answer": "This coaxial connector with a bayonet twist-lock mechanism was standard on 10BASE2 Ethernet and is still used on test equipment.",
+                "question": "What is a BNC (Bayonet Neill-Concelman) connector?",
                 "imageQuery": "BNC connector"
             },
             {
                 "points": 300,
-                "answer": "This connector is used on serial interfaces for console access.",
-                "question": "DB9",
+                "answer": "This 9-pin D-subminiature connector is commonly used for RS-232 serial connections to configure network equipment via console ports.",
+                "question": "What is a DB9 (DE-9) connector?",
                 "imageQuery": "DE-9 connector serial"
             },
             {
                 "points": 400,
-                "answer": "Name the fiber connector with a push-pull mechanism and square shape.",
-                "question": "SC connector",
+                "answer": "This square-shaped fiber optic connector uses a push-pull latching mechanism with a 2.5mm ferrule for reliable connections.",
+                "question": "What is an SC (Subscriber/Standard Connector)?",
                 "imageQuery": "SC fiber connector"
             },
             {
                 "points": 500,
-                "answer": "Identify the copper termination used in structured cabling panels.",
-                "question": "Keystone jack",
+                "answer": "This modular jack snaps into wall plates and patch panels, providing the female termination point for Ethernet connections.",
+                "question": "What is a keystone jack?",
                 "imageQuery": "Ethernet keystone jack"
             }
         ]
@@ -119,32 +119,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify this common wireless networking device.",
-                "question": "Wireless access point",
+                "answer": "This device broadcasts wireless signals to create a Wi-Fi network, bridging wireless clients to the wired LAN infrastructure.",
+                "question": "What is a wireless access point (WAP)?",
                 "imageQuery": "Wireless access point device"
             },
             {
                 "points": 200,
-                "answer": "Name the antenna type that focuses signal in one direction.",
-                "question": "Yagi antenna",
+                "answer": "This directional antenna with multiple parallel elements focuses radio signals in one direction for long-range point-to-point links.",
+                "question": "What is a Yagi antenna?",
                 "imageQuery": "Yagi antenna"
             },
             {
                 "points": 300,
-                "answer": "Identify the antenna used for point-to-point microwave links.",
-                "question": "Parabolic dish antenna",
+                "answer": "This highly directional antenna uses a curved reflector to focus radio waves, ideal for long-distance wireless bridges.",
+                "question": "What is a parabolic dish antenna?",
                 "imageQuery": "parabolic dish antenna wifi"
             },
             {
                 "points": 400,
-                "answer": "This antenna has a 360-degree radiation pattern.",
-                "question": "Omnidirectional antenna",
+                "answer": "This antenna type radiates signal equally in all horizontal directions, creating a 360-degree coverage pattern.",
+                "question": "What is an omnidirectional antenna?",
                 "imageQuery": "omnidirectional antenna"
             },
             {
                 "points": 500,
-                "answer": "Name the standard for 5 GHz high-throughput Wi-Fi with MU-MIMO.",
-                "question": "802.11ac (Wi‑Fi 5)",
+                "answer": "This Wi-Fi standard operates in 5 GHz band with speeds up to 6.93 Gbps using MU-MIMO technology for multiple simultaneous streams.",
+                "question": "What is 802.11ac (Wi-Fi 5)?",
                 "imageQuery": "802.11ac access point"
             }
         ]
@@ -154,32 +154,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Identify the cable with two small connectors, often blue.",
-                "question": "LC-LC fiber patch cable",
+                "answer": "This duplex fiber patch cable with small form-factor LC connectors on both ends typically comes in blue for single-mode applications.",
+                "question": "What is an LC-LC fiber patch cable?",
                 "imageQuery": "LC LC fiber patch cable blue"
             },
             {
                 "points": 200,
-                "answer": "Name the tool used to inspect fiber endfaces for dirt or damage.",
-                "question": "Fiber microscope",
+                "answer": "This specialized optical tool magnifies fiber connector end-faces 200-400x to inspect for contamination, scratches, or damage.",
+                "question": "What is a fiber inspection microscope?",
                 "imageQuery": "fiber optic inspection microscope"
             },
             {
                 "points": 300,
-                "answer": "Identify the protective device used to organize and protect splices.",
-                "question": "Fiber splice tray",
+                "answer": "This organized housing protects fusion or mechanical fiber splices and provides strain relief within fiber distribution enclosures.",
+                "question": "What is a fiber splice tray?",
                 "imageQuery": "fiber splice tray"
             },
             {
                 "points": 400,
-                "answer": "This instrument measures signal loss across a fiber link.",
-                "question": "Optical power meter",
+                "answer": "This test instrument measures optical power levels in dBm to verify signal strength and calculate fiber link loss budgets.",
+                "question": "What is an optical power meter?",
                 "imageQuery": "optical power meter fiber"
             },
             {
                 "points": 500,
-                "answer": "Name the test that characterizes fiber with reflectometry.",
-                "question": "OTDR",
+                "answer": "This sophisticated test instrument sends light pulses down fiber and analyzes reflections to locate breaks, bends, and measure total length.",
+                "question": "What is an OTDR (Optical Time Domain Reflectometer)?",
                 "imageQuery": "optical time domain reflectometer"
             }
         ]

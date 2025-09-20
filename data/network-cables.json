@@ -4,32 +4,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Flat copper cable with 8 conductors.",
-                "question": "Twisted pair (UTP)",
+                "answer": "This copper network cable contains 8 wires arranged in 4 twisted pairs to reduce electromagnetic interference, commonly used for Ethernet connections.",
+                "question": "What is UTP (Unshielded Twisted Pair) cable?",
                 "imageQuery": "twisted pair ethernet cable"
             },
             {
                 "points": 200,
-                "answer": "Identify the category supporting 1 Gbps up to 100 m.",
-                "question": "Cat5e",
+                "answer": "This enhanced Category 5 cable supports Gigabit Ethernet (1000BASE-T) at frequencies up to 100 MHz for distances up to 100 meters.",
+                "question": "What is Cat5e (Category 5 enhanced) cable?",
                 "imageQuery": "Cat5e cable"
             },
             {
                 "points": 300,
-                "answer": "Identify the category supporting 10 Gbps up to 55 m.",
-                "question": "Cat6",
+                "answer": "This cable category operates at 250 MHz, supporting 10 Gigabit Ethernet up to 55 meters, or 1 Gigabit up to 100 meters.",
+                "question": "What is Cat6 (Category 6) cable?",
                 "imageQuery": "Cat6 cable"
             },
             {
                 "points": 400,
-                "answer": "Shielded cable to reduce EMI.",
-                "question": "STP",
+                "answer": "This twisted pair cable includes foil or braided shielding around the pairs to protect against electromagnetic interference in noisy environments.",
+                "question": "What is STP (Shielded Twisted Pair) cable?",
                 "imageQuery": "shielded twisted pair cable"
             },
             {
                 "points": 500,
-                "answer": "Cabling standard with 4 twisted pairs terminated to T568B.",
-                "question": "TIA/EIA-568B",
+                "answer": "This wiring standard specifies the pin-to-pair assignments for 8P8C connectors, with orange and green pairs swapped compared to T568A.",
+                "question": "What is the TIA/EIA-568B wiring standard?",
                 "imageQuery": "T568B wiring"
             }
         ]
@@ -39,32 +39,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Common coax used in cable internet.",
-                "question": "RG-6",
+                "answer": "This 75-ohm coaxial cable with quad shielding is the standard for cable TV and broadband internet connections from your ISP.",
+                "question": "What is RG-6 coaxial cable?",
                 "imageQuery": "RG-6 coax cable"
             },
             {
                 "points": 200,
-                "answer": "Legacy Ethernet coax type.",
-                "question": "RG-58 (10BASE2)",
+                "answer": "This 50-ohm thin coaxial cable was used for 10BASE2 'Thinnet' Ethernet networks, supporting 10 Mbps up to 185 meters.",
+                "question": "What is RG-58 coaxial cable?",
                 "imageQuery": "RG-58 coax 10BASE2"
             },
             {
                 "points": 300,
-                "answer": "Thicknet legacy standard.",
-                "question": "RG-8 (10BASE5)",
+                "answer": "This thick 50-ohm coaxial cable was used for 10BASE5 'Thicknet' Ethernet, supporting 10 Mbps up to 500 meters.",
+                "question": "What is RG-8 coaxial cable?",
                 "imageQuery": "RG-8 coax 10BASE5"
             },
             {
                 "points": 400,
-                "answer": "Connector with bayonet coupling.",
-                "question": "BNC",
+                "answer": "This coaxial connector uses a bayonet twist-lock mechanism, commonly found on older network equipment and test instruments.",
+                "question": "What is a BNC (Bayonet Neill-Concelman) connector?",
                 "imageQuery": "BNC connector coax"
             },
             {
                 "points": 500,
-                "answer": "Screw-on connector for TV and modems.",
-                "question": "F-type",
+                "answer": "This threaded coaxial connector is the standard for cable TV, satellite dishes, and cable modems, providing excellent signal quality.",
+                "question": "What is an F-type connector?",
                 "imageQuery": "F connector coax"
             }
         ]
@@ -74,32 +74,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Orange patch cable.",
-                "question": "Multimode OM2/OM3",
+                "answer": "This fiber optic cable with an orange jacket uses a 50 or 62.5 micron core, supporting shorter distances up to 550m for 10 Gigabit Ethernet.",
+                "question": "What is multimode fiber (OM2/OM3)?",
                 "imageQuery": "multimode fiber patch cable orange"
             },
             {
                 "points": 200,
-                "answer": "Yellow patch cable.",
-                "question": "Single-mode OS2",
+                "answer": "This fiber optic cable with a yellow jacket uses a 9 micron core, supporting long distances up to 40km without signal regeneration.",
+                "question": "What is single-mode fiber (OS2)?",
                 "imageQuery": "single-mode fiber patch cable yellow"
             },
             {
                 "points": 300,
-                "answer": "Connector with ferrule 2.5mm.",
-                "question": "SC",
+                "answer": "This square-shaped fiber connector uses a push-pull coupling with a 2.5mm ferrule, common in older fiber installations.",
+                "question": "What is an SC (Subscriber Connector)?",
                 "imageQuery": "SC fiber connector close-up"
             },
             {
                 "points": 400,
-                "answer": "Duplex small-form connector.",
-                "question": "LC",
+                "answer": "This small form-factor fiber connector with a 1.25mm ferrule is commonly used in high-density data center applications.",
+                "question": "What is an LC (Lucent Connector)?",
                 "imageQuery": "LC duplex connector"
             },
             {
                 "points": 500,
-                "answer": "Multi-fiber push-on connector.",
-                "question": "MPO/MTP",
+                "answer": "This high-density fiber connector can terminate 12, 24, or more fibers in a single push-on connector for backbone cabling.",
+                "question": "What is an MPO/MTP (Multi-fiber Push On) connector?",
                 "imageQuery": "MPO MTP connector"
             }
         ]
@@ -109,32 +109,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Wall outlet for Ethernet.",
-                "question": "Keystone jack",
+                "answer": "This modular wall outlet accepts an RJ45 plug and provides the termination point for horizontal cabling runs to workstations.",
+                "question": "What is a keystone jack?",
                 "imageQuery": "ethernet keystone wall jack"
             },
             {
                 "points": 200,
-                "answer": "Front-of-rack cable organization.",
-                "question": "Patch panel",
+                "answer": "This rack-mounted panel provides organized termination points for horizontal cabling, typically with 24 or 48 ports for patching to switches.",
+                "question": "What is a patch panel?",
                 "imageQuery": "network patch panel loaded"
             },
             {
                 "points": 300,
-                "answer": "Allows slack management above panel.",
-                "question": "Cable manager",
+                "answer": "This horizontal or vertical rack accessory organizes patch cables, preventing tangles and maintaining proper bend radius.",
+                "question": "What is a cable management panel?",
                 "imageQuery": "rack cable manager"
             },
             {
                 "points": 400,
-                "answer": "Standards-compliant color code for pinout.",
-                "question": "T568A/T568B",
+                "answer": "These two wiring standards define the color-coded pin assignments for 8P8C connectors, differing in the orange and green pair positions.",
+                "question": "What are T568A and T568B wiring standards?",
                 "imageQuery": "T568A T568B wiring diagram"
             },
             {
                 "points": 500,
-                "answer": "Testing and certifying cable.",
-                "question": "Cable certifier",
+                "answer": "This testing device verifies that installed cabling meets TIA/EIA standards for parameters like attenuation, crosstalk, and length.",
+                "question": "What is a cable certifier?",
                 "imageQuery": "cable certifier device"
             }
         ]
@@ -144,32 +144,32 @@
         "clues": [
             {
                 "points": 100,
-                "answer": "Copper delivering power and data.",
-                "question": "PoE cable",
+                "answer": "This Ethernet cable carries both data and up to 90 watts of DC power to devices like IP cameras and wireless access points.",
+                "question": "What is a PoE (Power over Ethernet) cable?",
                 "imageQuery": "PoE ethernet cable injector"
             },
             {
                 "points": 200,
-                "answer": "Direct device-to-device connection.",
-                "question": "Crossover cable",
+                "answer": "This Ethernet cable swaps transmit and receive pairs, allowing direct connection between two computers or similar devices without a switch.",
+                "question": "What is a crossover cable?",
                 "imageQuery": "ethernet crossover cable"
             },
             {
                 "points": 300,
-                "answer": "Shielded cable for industrial environments.",
-                "question": "Industrial Ethernet (STP)",
+                "answer": "This heavy-duty shielded Ethernet cable resists electromagnetic interference, oil, and chemicals in factory automation environments.",
+                "question": "What is industrial Ethernet cable?",
                 "imageQuery": "industrial ethernet cable shielded"
             },
             {
                 "points": 400,
-                "answer": "Outdoor-rated cable resistant to UV.",
-                "question": "Outdoor Ethernet",
+                "answer": "This weatherproof Ethernet cable features UV-resistant jacket and gel-filled core for direct burial or aerial installation.",
+                "question": "What is outdoor-rated Ethernet cable?",
                 "imageQuery": "outdoor ethernet cable UV"
             },
             {
                 "points": 500,
-                "answer": "Cable with stranded conductors for flexibility.",
-                "question": "Patch cable (stranded)",
+                "answer": "This flexible Ethernet cable uses stranded copper conductors instead of solid core, ideal for frequently moved connections.",
+                "question": "What is a stranded patch cable?",
                 "imageQuery": "ethernet patch cable stranded"
             }
         ]
