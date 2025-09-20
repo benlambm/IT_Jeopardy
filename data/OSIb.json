@@ -2,51 +2,51 @@
   {
     "topic": "OSI LAYERS OVERVIEW",
     "clues": [
-      { "points": 100, "answer": "Mnemonic starting with 'Please Do Not Throw Sausage Pizza Away'.", "question": "Mnemonic for OSI L1‑L7" },
-      { "points": 200, "answer": "Number of total layers in the OSI model.", "question": "Seven" },
-      { "points": 300, "answer": "Layer that provides end‑user services such as HTTP, SMTP, and SNMP.", "question": "Application (Layer 7)" },
-      { "points": 400, "answer": "Layer responsible for data representation including encryption like TLS and formats like JPEG.", "question": "Presentation (Layer 6)" },
-      { "points": 500, "answer": "Layer that sets up, coordinates, and terminates conversations between applications.", "question": "Session (Layer 5)" }
+      { "points": 100, "answer": "This popular memory aid helps remember OSI layers 1-7 in order: Physical, Data Link, Network, Transport, Session, Presentation, Application.", "question": "What is 'Please Do Not Throw Sausage Pizza Away'?" },
+      { "points": 200, "answer": "The OSI reference model divides network communication into this many distinct layers, each with specific responsibilities.", "question": "What is seven?" },
+      { "points": 300, "answer": "This topmost OSI layer (Layer 7) provides network services directly to applications through protocols like HTTP, FTP, and SMTP.", "question": "What is the Application layer?" },
+      { "points": 400, "answer": "This Layer 6 handles data formatting, encryption/decryption (like SSL/TLS), and compression for application-layer protocols.", "question": "What is the Presentation layer?" },
+      { "points": 500, "answer": "This Layer 5 establishes, manages, and terminates sessions between applications, handling dialog control and synchronization.", "question": "What is the Session layer?" }
     ]
   },
   {
     "topic": "L2/L3 PROTOCOLS",
     "clues": [
-      { "points": 100, "answer": "Protocol switches use to prevent loops by placing some ports into a blocking state.", "question": "STP (Spanning Tree Protocol)" },
-      { "points": 200, "answer": "Protocol a host uses to resolve a MAC address for a known IPv4 address.", "question": "ARP" },
-      { "points": 300, "answer": "Neighbor discovery and address autoconfiguration for IPv6.", "question": "NDP" },
-      { "points": 400, "answer": "Protocol used by routers to communicate reachability and form adjacencies in a link‑state domain.", "question": "OSPF" },
-      { "points": 500, "answer": "ICMPv6 process used for automatically assigning IPv6 addresses without a DHCPv6 server.", "question": "SLAAC" }
+      { "points": 100, "answer": "This IEEE 802.1D protocol prevents Layer 2 loops by creating a spanning tree topology and blocking redundant switch ports.", "question": "What is STP (Spanning Tree Protocol)?" },
+      { "points": 200, "answer": "This protocol broadcasts 'who has this IP?' requests to discover the MAC address needed for local Ethernet communication.", "question": "What is ARP (Address Resolution Protocol)?" },
+      { "points": 300, "answer": "This IPv6 protocol replaces ARP, providing neighbor discovery, router discovery, and address autoconfiguration functions.", "question": "What is NDP (Neighbor Discovery Protocol)?" },
+      { "points": 400, "answer": "This link-state routing protocol builds a topology database using LSAs and calculates best paths using Dijkstra's algorithm.", "question": "What is OSPF (Open Shortest Path First)?" },
+      { "points": 500, "answer": "This IPv6 feature allows hosts to automatically configure their own addresses using router advertisements and EUI-64 formatting.", "question": "What is SLAAC (Stateless Address Autoconfiguration)?" }
     ]
   },
   {
     "topic": "L4 TRANSPORT & PORTS",
     "clues": [
-      { "points": 100, "answer": "Transport protocol used by DNS queries by default due to its low overhead.", "question": "UDP" },
-      { "points": 200, "answer": "Well‑known TCP port used for HTTPS.", "question": "443" },
-      { "points": 300, "answer": "Feature of TCP that ensures lost segments are resent and data is in order.", "question": "Reliability (ACKs and sequencing)" },
-      { "points": 400, "answer": "Term for controlling the rate of data transmission to prevent overwhelming the receiver.", "question": "Flow control" },
-      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Segment/Datagram" }
+      { "points": 100, "answer": "DNS queries typically use this connectionless transport protocol on port 53 for its speed and low overhead.", "question": "What is UDP (User Datagram Protocol)?" },
+      { "points": 200, "answer": "HTTPS uses this well-known TCP port for encrypted web traffic secured by TLS/SSL.", "question": "What is port 443?" },
+      { "points": 300, "answer": "TCP provides this through sequence numbers, acknowledgments, and automatic retransmission of lost segments.", "question": "What is reliability?" },
+      { "points": 400, "answer": "This TCP mechanism uses window size adjustments to prevent a fast sender from overwhelming a slower receiver.", "question": "What is flow control?" },
+      { "points": 500, "answer": "Layer 4's protocol data unit - TCP uses this term while UDP uses 'datagram' for its PDU.", "question": "What is a segment?" }
     ]
   },
   {
     "topic": "COMMON L7 PROTOCOLS",
     "clues": [
-      { "points": 100, "answer": "Protocol used to retrieve web pages securely using TLS.", "question": "HTTPS" },
-      { "points": 200, "answer": "Protocol for sending e‑mail between servers; commonly TCP 25.", "question": "SMTP" },
-      { "points": 300, "answer": "Directory service protocol often used for centralized authentication and lookups.", "question": "LDAP" },
-      { "points": 400, "answer": "Protocol used to manage network devices via MIBs and OIDs.", "question": "SNMP" },
-      { "points": 500, "answer": "Mail protocol used by clients to retrieve messages while leaving them on the server.", "question": "IMAP" }
+      { "points": 100, "answer": "This secure web protocol encrypts HTTP traffic using TLS/SSL, operating on TCP port 443 by default.", "question": "What is HTTPS (HTTP Secure)?" },
+      { "points": 200, "answer": "This protocol sends email between mail servers using TCP port 25, but doesn't retrieve messages for end users.", "question": "What is SMTP (Simple Mail Transfer Protocol)?" },
+      { "points": 300, "answer": "This directory protocol on TCP port 389 provides centralized authentication and queries organizational data like Active Directory.", "question": "What is LDAP (Lightweight Directory Access Protocol)?" },
+      { "points": 400, "answer": "This network management protocol uses agents, MIBs, and OIDs to monitor and configure network devices on UDP port 161.", "question": "What is SNMP (Simple Network Management Protocol)?" },
+      { "points": 500, "answer": "This email retrieval protocol on TCP port 143 allows multiple clients to access the same mailbox with server-side storage.", "question": "What is IMAP (Internet Message Access Protocol)?" }
     ]
   },
   {
     "topic": "EXAM MINDSET & SCENARIOS",
     "clues": [
-      { "points": 100, "answer": "If a user can ping by IP but not by hostname, the troubled layer and protocol are these.", "question": "Layer 7, DNS" },
-      { "points": 200, "answer": "If users on different VLANs cannot reach each other, the device/layer missing or misconfigured is this.", "question": "Router or L3 SVI (Layer 3)" },
-      { "points": 300, "answer": "High retransmissions and low throughput likely indicate issues at this OSI layer.", "question": "Layer 1 or Layer 2 (physical/cabling or duplex)" },
-      { "points": 400, "answer": "VoIP choppiness under congestion points to tuning at this layer and feature set.", "question": "Layer 4/7, QoS" },
-      { "points": 500, "answer": "A loop created by connecting two switch ports directly will primarily impact this layer and be mitigated by this protocol.", "question": "Layer 2, STP" }
+      { "points": 100, "answer": "When ping works with IP addresses but fails with hostnames, this Layer 7 name resolution service is the likely culprit.", "question": "What is DNS (at Layer 7)?" },
+      { "points": 200, "answer": "Inter-VLAN communication failures indicate a missing or misconfigured Layer 3 device or interface for routing between VLANs.", "question": "What is a router or Layer 3 SVI?" },
+      { "points": 300, "answer": "High TCP retransmissions and poor throughput often indicate problems at these lower layers - bad cables, duplex mismatches, or interference.", "question": "What are Layer 1 or Layer 2?" },
+      { "points": 400, "answer": "Choppy VoIP calls during network congestion require implementing this traffic prioritization technology at Layers 4-7.", "question": "What is QoS (Quality of Service)?" },
+      { "points": 500, "answer": "Connecting two switch ports creates a Layer 2 loop causing broadcast storms, prevented by this protocol that blocks redundant paths.", "question": "What is STP (Spanning Tree Protocol) at Layer 2?" }
     ]
   }
 ]

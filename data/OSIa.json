@@ -2,51 +2,51 @@
   {
     "topic": "PHYSICAL (L1)",
     "clues": [
-      { "points": 100, "answer": "Connector used for Ethernet twisted‑pair cabling (8P8C).", "question": "RJ‑45" },
-      { "points": 200, "answer": "Copper cabling with four twisted pairs; comes as Cat 5e, Cat 6, Cat 6A, etc.", "question": "Twisted pair (UTP/STP)" },
-      { "points": 300, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Bits" },
-      { "points": 400, "answer": "OSI device that regenerates or amplifies signals without interpreting frames.", "question": "Repeater" },
-      { "points": 500, "answer": "Term describing signal loss over distance in cabling or wireless.", "question": "Attenuation" }
+      { "points": 100, "answer": "This 8-position, 8-contact modular connector terminates twisted pair cables for Ethernet connections, technically called 8P8C.", "question": "What is an RJ-45 connector?" },
+      { "points": 200, "answer": "This copper cable type contains four twisted pairs of wires to reduce electromagnetic interference, available in categories like Cat5e, Cat6, and Cat6A.", "question": "What is twisted pair cable (UTP/STP)?" },
+      { "points": 300, "answer": "The Layer 1 protocol data unit representing individual binary digits (0s and 1s) transmitted as electrical or optical signals.", "question": "What are bits?" },
+      { "points": 400, "answer": "This Layer 1 device receives weakened signals and retransmits them at full strength without examining the data content.", "question": "What is a repeater?" },
+      { "points": 500, "answer": "This phenomenon describes the gradual weakening of signals as they travel through cables or wireless media over distance.", "question": "What is attenuation?" }
     ]
   },
   {
     "topic": "DATA LINK (L2)",
     "clues": [
-      { "points": 100, "answer": "Sub‑layer responsible for addressing and access to the media on Ethernet.", "question": "MAC sublayer" },
-      { "points": 200, "answer": "Sub‑layer that handles framing and error detection.", "question": "LLC sublayer" },
-      { "points": 300, "answer": "Address type burned into a NIC and used for delivery on LANs.", "question": "MAC address" },
-      { "points": 400, "answer": "Protocol used by switches to prevent loops by blocking redundant links.", "question": "Spanning Tree Protocol (STP)" },
-      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Frame" }
+      { "points": 100, "answer": "This Data Link sublayer manages hardware addressing and controls access to the physical transmission medium in Ethernet networks.", "question": "What is the MAC (Media Access Control) sublayer?" },
+      { "points": 200, "answer": "This Data Link sublayer provides error checking and manages frame synchronization between network and MAC sublayers.", "question": "What is the LLC (Logical Link Control) sublayer?" },
+      { "points": 300, "answer": "This 48-bit hexadecimal address is permanently assigned to network interfaces by manufacturers for Layer 2 communication.", "question": "What is a MAC address (physical address)?" },
+      { "points": 400, "answer": "This IEEE 802.1D protocol prevents switching loops by calculating a tree topology and blocking redundant paths.", "question": "What is STP (Spanning Tree Protocol)?" },
+      { "points": 500, "answer": "The Layer 2 protocol data unit that encapsulates network layer packets with headers and trailers for local delivery.", "question": "What is a frame?" }
     ]
   },
   {
     "topic": "NETWORK (L3)",
     "clues": [
-      { "points": 100, "answer": "Primary protocol that provides logical addressing and routing across internetworks.", "question": "IP" },
-      { "points": 200, "answer": "32‑bit addressing scheme written in dotted‑decimal notation.", "question": "IPv4" },
-      { "points": 300, "answer": "Interior gateway protocol that uses link‑state advertisements and areas.", "question": "OSPF" },
-      { "points": 400, "answer": "Message protocol used for error reporting and diagnostics (e.g., echo request/reply).", "question": "ICMP" },
-      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Packet" }
+      { "points": 100, "answer": "This fundamental protocol provides logical addressing and best-effort delivery of data across different networks using IP addresses.", "question": "What is IP (Internet Protocol)?" },
+      { "points": 200, "answer": "This addressing scheme uses 32 bits divided into four octets, written in dotted-decimal notation like 192.168.1.1.", "question": "What is IPv4 (Internet Protocol version 4)?" },
+      { "points": 300, "answer": "This link-state routing protocol uses Dijkstra's algorithm to calculate shortest paths and organizes networks into areas for scalability.", "question": "What is OSPF (Open Shortest Path First)?" },
+      { "points": 400, "answer": "This protocol provides error messages and operational information, including ping (echo request/reply) and traceroute functionality.", "question": "What is ICMP (Internet Control Message Protocol)?" },
+      { "points": 500, "answer": "The Layer 3 protocol data unit containing source and destination IP addresses plus the encapsulated transport layer segment.", "question": "What is a packet?" }
     ]
   },
   {
     "topic": "TRANSPORT (L4)",
     "clues": [
-      { "points": 100, "answer": "Connection‑oriented protocol that provides reliability, sequencing, and flow control.", "question": "TCP" },
-      { "points": 200, "answer": "Connectionless protocol offering low overhead and no guaranteed delivery.", "question": "UDP" },
-      { "points": 300, "answer": "Flow‑control mechanism in TCP using a variable‑size buffer.", "question": "Windowing" },
-      { "points": 400, "answer": "Process used to establish a reliable TCP session before data transfer.", "question": "Three‑way handshake" },
-      { "points": 500, "answer": "Name of the protocol data unit (PDU) at this layer.", "question": "Segment" }
+      { "points": 100, "answer": "This connection-oriented protocol ensures reliable delivery through acknowledgments, sequencing, and retransmission of lost segments.", "question": "What is TCP (Transmission Control Protocol)?" },
+      { "points": 200, "answer": "This connectionless protocol provides fast, best-effort delivery without acknowledgments, ideal for real-time applications like VoIP.", "question": "What is UDP (User Datagram Protocol)?" },
+      { "points": 300, "answer": "This TCP mechanism controls data flow by adjusting the amount of data sent before requiring acknowledgment from the receiver.", "question": "What is TCP windowing (sliding window)?" },
+      { "points": 400, "answer": "This TCP connection establishment process uses SYN, SYN-ACK, and ACK flags to synchronize sequence numbers before data transfer.", "question": "What is the TCP three-way handshake?" },
+      { "points": 500, "answer": "The Layer 4 protocol data unit for TCP, containing source/destination ports and data from upper layers.", "question": "What is a segment?" }
     ]
   },
   {
-    "topic": "UPPER LAYERS (L5‑L7)",
+    "topic": "UPPER LAYERS (L5-L7)",
     "clues": [
-      { "points": 100, "answer": "Layer that manages setup, maintenance, and teardown of dialogs between applications.", "question": "Session layer (Layer 5)" },
-      { "points": 200, "answer": "Layer responsible for data format translation, encryption, and compression.", "question": "Presentation layer (Layer 6)" },
-      { "points": 300, "answer": "Layer providing services to end‑user applications like HTTP, SMTP, and DNS.", "question": "Application layer (Layer 7)" },
-      { "points": 400, "answer": "Common Layer 7 protocol used for translating hostnames to IP addresses.", "question": "DNS" },
-      { "points": 500, "answer": "Classic file transfer protocol that operates at Layer 7 and uses TCP.", "question": "FTP" }
+      { "points": 100, "answer": "This OSI layer establishes, manages, and terminates sessions between applications, handling dialog control and synchronization.", "question": "What is Layer 5 (Session layer)?" },
+      { "points": 200, "answer": "This OSI layer handles data representation, encryption/decryption, and compression/decompression for application compatibility.", "question": "What is Layer 6 (Presentation layer)?" },
+      { "points": 300, "answer": "This topmost OSI layer provides network services directly to end-user applications through protocols like HTTP, FTP, and SMTP.", "question": "What is Layer 7 (Application layer)?" },
+      { "points": 400, "answer": "This Layer 7 protocol resolves domain names to IP addresses using a hierarchical distributed database system on port 53.", "question": "What is DNS (Domain Name System)?" },
+      { "points": 500, "answer": "This Layer 7 protocol transfers files between systems using separate control (port 21) and data (port 20) connections.", "question": "What is FTP (File Transfer Protocol)?" }
     ]
   }
 ]
