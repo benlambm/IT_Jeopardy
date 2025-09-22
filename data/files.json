@@ -7,5 +7,7 @@
   "network-appliances.json",
   "network-cables.json",
   "network-media.json",
-  "network-types.json"
+  "network-types.json",
+  "port-names.json",
+  "port-numbers.json"
 ]

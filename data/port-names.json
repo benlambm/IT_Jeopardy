@@ -1,0 +1,152 @@
+[
+    {
+        "topic": "EMAIL",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This protocol on port 25 is used for sending email between mail servers.",
+                "question": "SMTP"
+            },
+            {
+                "points": 200,
+                "answer": "Port 587 is used for this secure email submission protocol with STARTTLS encryption.",
+                "question": "SMTP"
+            },
+            {
+                "points": 300,
+                "answer": "This protocol on port 110 downloads email messages from a server to a single device.",
+                "question": "POP3"
+            },
+            {
+                "points": 400,
+                "answer": "Port 143 is used by this protocol that allows email to be stored on the server and accessed from multiple devices.",
+                "question": "IMAP"
+            },
+            {
+                "points": 500,
+                "answer": "This directory access protocol runs on port 389 and is used for authentication and directory services.",
+                "question": "LDAP"
+            }
+        ]
+    },
+    {
+        "topic": "WEB & REMOTE ACCESS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The standard web protocol that runs on port 80 for unencrypted web traffic.",
+                "question": "HTTP"
+            },
+            {
+                "points": 200,
+                "answer": "Port 443 is used by this secure version of web traffic protocol with SSL/TLS encryption.",
+                "question": "HTTPS"
+            },
+            {
+                "points": 300,
+                "answer": "This secure shell protocol on port 22 provides encrypted remote access and secure file transfers.",
+                "question": "SSH"
+            },
+            {
+                "points": 400,
+                "answer": "Port 23 is used by this older, unencrypted remote access protocol that has largely been replaced by SSH.",
+                "question": "Telnet"
+            },
+            {
+                "points": 500,
+                "answer": "Microsoft's remote desktop protocol that runs on port 3389 for graphical remote access.",
+                "question": "RDP"
+            }
+        ]
+    },
+    {
+        "topic": "NETWORK",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This naming system protocol on port 53 translates domain names to IP addresses.",
+                "question": "DNS"
+            },
+            {
+                "points": 200,
+                "answer": "Port 123 is used by this protocol to synchronize computer clocks across networks.",
+                "question": "NTP"
+            },
+            {
+                "points": 300,
+                "answer": "This network management protocol uses port 161 for monitoring and managing network devices.",
+                "question": "SNMP"
+            },
+            {
+                "points": 400,
+                "answer": "Port 162 is used by SNMP for these unsolicited notifications sent from network devices.",
+                "question": "SNMP Trap"
+            },
+            {
+                "points": 500,
+                "answer": "This logging protocol on port 514 collects and forwards system log messages across networks.",
+                "question": "Syslog"
+            }
+        ]
+    },
+    {
+        "topic": "DATA",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Port 20 is used by FTP for this type of connection that actually transfers file content.",
+                "question": "Data Transfer"
+            },
+            {
+                "points": 200,
+                "answer": "FTP uses port 21 for this type of connection that sends commands and receives responses.",
+                "question": "Control"
+            },
+            {
+                "points": 300,
+                "answer": "This simplified file transfer protocol on port 69 is often used for network device configuration.",
+                "question": "TFTP"
+            },
+            {
+                "points": 400,
+                "answer": "Port 445 is used by this Microsoft protocol for sharing files and printers over networks.",
+                "question": "SMB"
+            },
+            {
+                "points": 500,
+                "answer": "Microsoft's database server uses port 1433 for this type of database communication.",
+                "question": "SQL Server"
+            }
+        ]
+    },
+    {
+        "topic": "MISC IP",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This VoIP signaling protocol runs on port 5060 for unencrypted voice communications setup.",
+                "question": "SIP"
+            },
+            {
+                "points": 200,
+                "answer": "Port 5061 is used by SIP with this encryption method for secure voice signaling.",
+                "question": "TLS"
+            },
+            {
+                "points": 300,
+                "answer": "DHCP servers use port 67 to automatically assign these network addresses to client devices.",
+                "question": "IP Addresses"
+            },
+            {
+                "points": 400,
+                "answer": "Port 68 is used by DHCP for communications from this side of the client-server relationship.",
+                "question": "Client"
+            },
+            {
+                "points": 500,
+                "answer": "Port 636 is used by this secure version of LDAP that includes SSL encryption.",
+                "question": "LDAPS"
+            }
+        ]
+    }
+]

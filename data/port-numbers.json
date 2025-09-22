@@ -1,0 +1,152 @@
+[
+    {
+        "topic": "EMAIL",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "SMTP uses this port number for basic mail transfer between servers.",
+                "question": "25"
+            },
+            {
+                "points": 200,
+                "answer": "SMTP with STARTTLS encryption uses this alternative port for mail submission.",
+                "question": "587"
+            },
+            {
+                "points": 300,
+                "answer": "POP3 email retrieval protocol operates on this port number.",
+                "question": "110"
+            },
+            {
+                "points": 400,
+                "answer": "IMAP email access protocol uses this port for server-based email storage.",
+                "question": "143"
+            },
+            {
+                "points": 500,
+                "answer": "LDAP directory services operate on this standard port number.",
+                "question": "389"
+            }
+        ]
+    },
+    {
+        "topic": "WEB & REMOTE ACCESS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "HTTP web traffic uses this default port number.",
+                "question": "80"
+            },
+            {
+                "points": 200,
+                "answer": "HTTPS secure web traffic operates on this port number.",
+                "question": "443"
+            },
+            {
+                "points": 300,
+                "answer": "SSH secure shell and SFTP use this port number.",
+                "question": "22"
+            },
+            {
+                "points": 400,
+                "answer": "Telnet remote access protocol uses this port number.",
+                "question": "23"
+            },
+            {
+                "points": 500,
+                "answer": "Microsoft Remote Desktop Protocol operates on this port number.",
+                "question": "3389"
+            }
+        ]
+    },
+    {
+        "topic": "NETWORK",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "DNS domain name resolution uses this port number.",
+                "question": "53"
+            },
+            {
+                "points": 200,
+                "answer": "Network Time Protocol for clock synchronization uses this port.",
+                "question": "123"
+            },
+            {
+                "points": 300,
+                "answer": "SNMP queries and agent communications use this port number.",
+                "question": "161"
+            },
+            {
+                "points": 400,
+                "answer": "SNMP trap notifications are sent using this port number.",
+                "question": "162"
+            },
+            {
+                "points": 500,
+                "answer": "Syslog system logging protocol uses this port number.",
+                "question": "514"
+            }
+        ]
+    },
+    {
+        "topic": "DATA",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "FTP data transfer connections use this port number.",
+                "question": "20"
+            },
+            {
+                "points": 200,
+                "answer": "FTP control and command connections operate on this port.",
+                "question": "21"
+            },
+            {
+                "points": 300,
+                "answer": "TFTP simple file transfer protocol uses this port number.",
+                "question": "69"
+            },
+            {
+                "points": 400,
+                "answer": "SMB file and printer sharing protocol operates on this port.",
+                "question": "445"
+            },
+            {
+                "points": 500,
+                "answer": "Microsoft SQL Server database communications use this port number.",
+                "question": "1433"
+            }
+        ]
+    },
+    {
+        "topic": "MISC IP",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "DHCP server communications use this port number.",
+                "question": "67"
+            },
+            {
+                "points": 200,
+                "answer": "DHCP client communications operate on this port number.",
+                "question": "68"
+            },
+            {
+                "points": 300,
+                "answer": "LDAPS secure directory access protocol uses this port number.",
+                "question": "636"
+            },
+                        {
+                "points": 400,
+                "answer": "SIP unencrypted VoIP signaling uses this port number.",
+                "question": "5060"
+            },
+            {
+                "points": 500,
+                "answer": "SIP with TLS encryption operates on this port number.",
+                "question": "5061"
+            }
+        ]
+    }
+]
