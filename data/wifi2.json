@@ -1,0 +1,152 @@
+[
+    {
+        "topic": "WI-FI STANDARDS AND EVOLUTION",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The original 802.11 Wi-Fi standard that operated at just this data rate.",
+                "question": "1 Mbps"
+            },
+            {
+                "points": 200,
+                "answer": "This Wi-Fi standard uses OFDM modulation and achieves 54 Mbps in the 5 GHz band.",
+                "question": "802.11a"
+            },
+            {
+                "points": 300,
+                "answer": "The official designation for 802.11n wireless standard released in recent years.",
+                "question": "Wi-Fi 4"
+            },
+            {
+                "points": 400,
+                "answer": "The maximum number of spatial streams supported by Wi-Fi 5 (802.11ac).",
+                "question": "Eight"
+            },
+            {
+                "points": 500,
+                "answer": "Wi-Fi 6 uses this new frequency band to achieve speeds approaching 10 Gigabit.",
+                "question": "6 GHz"
+            }
+        ]
+    },
+    {
+        "topic": "WIRELESS SECURITY AND ENCRYPTION",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This obsolete encryption standard is vulnerable to replay attacks and is no longer secure.",
+                "question": "WEP (Wired Equivalent Privacy)"
+            },
+            {
+                "points": 200,
+                "answer": "The cipher used by WPA2 deployed within the CCMP protocol for data encryption.",
+                "question": "AES (Advanced Encryption Standard)"
+            },
+            {
+                "points": 300,
+                "answer": "WPA3's mechanism that replaces the vulnerable four-way handshake for authentication.",
+                "question": "SAE (Simultaneous Authentication of Equals)"
+            },
+            {
+                "points": 400,
+                "answer": "WPA3 uses this mode of operation to replace AES CCMP for stronger encryption.",
+                "question": "AES GCMP (Galois Counter Mode Protocol)"
+            },
+            {
+                "points": 500,
+                "answer": "The minimum passphrase length recommended for WPA2-PSK to resist brute force attacks.",
+                "question": "14 characters"
+            }
+        ]
+    },
+    {
+        "topic": "WIRELESS NETWORK DESIGN",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The minimum indoor range that a device supporting Wi-Fi standards should achieve.",
+                "question": "30 meters (100 feet)"
+            },
+            {
+                "points": 200,
+                "answer": "The virtual MAC address used to identify a Basic Service Set and its access point.",
+                "question": "BSSID (Basic Service Set Identifier)"
+            },
+            {
+                "points": 300,
+                "answer": "A graphical representation of signal strength across different physical locations.",
+                "question": "Heat map"
+            },
+            {
+                "points": 400,
+                "answer": "The total number of non-overlapping 20 MHz channels available in the 5 GHz band.",
+                "question": "25"
+            },
+            {
+                "points": 500,
+                "answer": "The wireless network area created when multiple APs with the same ESSID overlap coverage.",
+                "question": "Extended Service Area (ESA)"
+            }
+        ]
+    },
+    {
+        "topic": "ANTENNAS AND SIGNAL PROPAGATION",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The standard antenna type that radiates signals equally in all directions.",
+                "question": "Omnidirectional antenna"
+            },
+            {
+                "points": 200,
+                "answer": "The unit of measurement for signal strength where 0 dBm equals 1 milliwatt.",
+                "question": "dBm (decibel milliwatt)"
+            },
+            {
+                "points": 300,
+                "answer": "A bar-shaped unidirectional antenna with fins used for long-distance point-to-point links.",
+                "question": "Yagi antenna"
+            },
+            {
+                "points": 400,
+                "answer": "The RSSI value considered acceptable for a good wireless signal at reasonable range.",
+                "question": "-65 dBm"
+            },
+            {
+                "points": 500,
+                "answer": "The signal orientation from an antenna that can be horizontal, vertical, or dual-polarized.",
+                "question": "Polarization"
+            }
+        ]
+    },
+    {
+        "topic": "WIRELESS THREATS AND TROUBLESHOOTING",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "An unauthorized access point installed without permission on a wireless network.",
+                "question": "Rogue access point"
+            },
+            {
+                "points": 200,
+                "answer": "This attack floods spoofed management frames to disconnect clients from an AP.",
+                "question": "Deauthentication attack"
+            },
+            {
+                "points": 300,
+                "answer": "A malicious access point masquerading as a legitimate one with a similar SSID.",
+                "question": "Evil twin"
+            },
+            {
+                "points": 400,
+                "answer": "Interference from multiple APs using overlapping channels in close proximity.",
+                "question": "Adjacent channel interference (ACI)"
+            },
+            {
+                "points": 500,
+                "answer": "The recommended maximum number of clients per access point to prevent overcapacity.",
+                "question": "30 clients"
+            }
+        ]
+    }
+]

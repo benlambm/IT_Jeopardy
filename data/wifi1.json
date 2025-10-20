@@ -1,0 +1,152 @@
+[
+    {
+        "topic": "802.11 STANDARDS & BANDS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This 2.4 GHz standard uses DSSS/CCK and offers a nominal data rate of 11 Mbps, with significant channel overlap.",
+                "question": "802.11b"
+            },
+            {
+                "points": 200,
+                "answer": "This 5 GHz standard uses OFDM at 54 Mbps; channels in radar ranges require Dynamic Frequency Selection.",
+                "question": "802.11a"
+            },
+            {
+                "points": 300,
+                "answer": "Also known as Wi‑Fi 4, this standard introduced MIMO and optional 40 MHz channel bonding across 2.4 and 5 GHz.",
+                "question": "802.11n"
+            },
+            {
+                "points": 400,
+                "answer": "Branded as Wi‑Fi 5, this 5 GHz‑only standard supports up to 8 spatial streams and 80/160 MHz channels for very high throughput.",
+                "question": "802.11ac"
+            },
+            {
+                "points": 500,
+                "answer": "Branded as Wi‑Fi 6, this standard adds OFDMA, expanded MU‑MIMO (including uplink), and 6 GHz support to deliver high efficiency.",
+                "question": "802.11ax"
+            }
+        ]
+    },
+    {
+        "topic": "RADIO & MAC FUNDAMENTALS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Wi‑Fi’s media access method that uses acknowledgments and optional RTS/CTS to reduce collisions on a half‑duplex medium.",
+                "question": "CSMA/CA"
+            },
+            {
+                "points": 200,
+                "answer": "The MAC address that uniquely identifies the AP radio hosting a BSS.",
+                "question": "BSSID"
+            },
+            {
+                "points": 300,
+                "answer": "The WLAN network name that stations join; when unified across multiple APs it is extended.",
+                "question": "SSID"
+            },
+            {
+                "points": 400,
+                "answer": "Client‑measured signal strength in dBm; values closer to 0 (for example, −65 dBm) indicate stronger reception.",
+                "question": "RSSI"
+            },
+            {
+                "points": 500,
+                "answer": "The difference between received signal and background noise, expressed in dB, used to assess link quality.",
+                "question": "Signal‑to‑noise ratio"
+            }
+        ]
+    },
+    {
+        "topic": "WLAN DESIGN & SURVEY",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The coverage cell of a single AP in infrastructure mode.",
+                "question": "Basic service area"
+            },
+            {
+                "points": 200,
+                "answer": "A visualization that maps signal strength and channel use across a floor plan in color gradients.",
+                "question": "Heat map"
+            },
+            {
+                "points": 300,
+                "answer": "Multiple APs on a distribution system presenting the same SSID and security for roaming form this.",
+                "question": "Extended Service Set"
+            },
+            {
+                "points": 400,
+                "answer": "An AP feature that reduces 2.4 GHz advertisements to influence dual/tri‑band clients toward higher bands.",
+                "question": "Band steering"
+            },
+            {
+                "points": 500,
+                "answer": "The IETF protocol used by wireless controllers to provision and manage lightweight APs, derived from LWAPP.",
+                "question": "CAPWAP"
+            }
+        ]
+    },
+    {
+        "topic": "WIFI SECURITY",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "A legacy Wi‑Fi encryption standard using RC4 that is considered insecure and deprecated.",
+                "question": "WEP"
+            },
+            {
+                "points": 200,
+                "answer": "WPA2’s authenticated encryption suite that uses AES in CCM mode.",
+                "question": "AES‑CCMP"
+            },
+            {
+                "points": 300,
+                "answer": "In WPA2‑Personal, this shared secret generates the PMK used in the four‑way handshake.",
+                "question": "Pre‑shared key"
+            },
+            {
+                "points": 400,
+                "answer": "WPA3’s password‑authenticated key exchange that replaces the WPA2 four‑way handshake.",
+                "question": "SAE"
+            },
+            {
+                "points": 500,
+                "answer": "The port‑based access control framework that uses EAP to authenticate Wi‑Fi clients via an AAA server.",
+                "question": "802.1X"
+            }
+        ]
+    },
+    {
+        "topic": "TROUBLESHOOTING & INTERFERENCE",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "Interference caused by using nearby but overlapping 2.4 GHz channels, such as 1 and 3.",
+                "question": "Adjacent channel interference"
+            },
+            {
+                "points": 200,
+                "answer": "The total radiated output considering transmit power, cable/connector loss, and antenna gain.",
+                "question": "EIRP"
+            },
+            {
+                "points": 300,
+                "answer": "A measurement tool that reveals non‑Wi‑Fi RF emitters using a special receiver and often a directional antenna.",
+                "question": "Spectrum analyzer"
+            },
+            {
+                "points": 400,
+                "answer": "Antenna class that focuses energy in one direction, suited for point‑to‑point bridges (for example, Yagi, parabolic).",
+                "question": "Directional antennae"
+            },
+            {
+                "points": 500,
+                "answer": "A wireless attack that spoofs management frames to kick clients off a network; mitigated by 802.11w.",
+                "question": "Deauthentication attack"
+            }
+        ]
+    }
+]

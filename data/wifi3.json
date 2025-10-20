@@ -1,0 +1,152 @@
+[
+    {
+        "topic": "STANDARDS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "This standard, released in parallel with 802.11b, introduced OFDM but operated in the 5 GHz band, limiting its initial adoption.",
+                "question": "802.11a"
+            },
+            {
+                "points": 200,
+                "answer": "This popular early standard used the 2.4 GHz band and DSSS, offering a nominal data rate of 11 Mbps.",
+                "question": "802.11b"
+            },
+            {
+                "points": 300,
+                "answer": "Offering a straightforward upgrade from 802.11b, this standard brought the faster OFDM technology to the 2.4 GHz band for a 54 Mbps data rate.",
+                "question": "802.11g"
+            },
+            {
+                "points": 400,
+                "answer": "Now known as Wi-Fi 4, this standard introduced MIMO technology and could operate in both the 2.4 GHz and 5 GHz bands.",
+                "question": "802.11n"
+            },
+            {
+                "points": 500,
+                "answer": "Also known as Wi-Fi 5, this standard was designed to work only in the 5 GHz band and introduced wider channel bonding up to 160 MHz.",
+                "question": "802.11ac"
+            }
+        ]
+    },
+    {
+        "topic": "WIRELESS FUNDAMENTALS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The media access method used by Wi-Fi to avoid collisions, rather than just detecting them like Ethernet.",
+                "question": "CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)"
+            },
+            {
+                "points": 200,
+                "answer": "A device that acts as the center of a logical star topology in a wireless LAN, mediating connections for client devices.",
+                "question": "Access Point (AP)"
+            },
+            {
+                "points": 300,
+                "answer": "Of the two common Wi-Fi frequency bands, this one is better at penetrating solid surfaces and offers longer range.",
+                "question": "2.4 GHz"
+            },
+            {
+                "points": 400,
+                "answer": "The technology that uses multiple antennas for transmitting and receiving to increase bandwidth and signal reliability.",
+                "question": "MIMO (Multiple Input Multiple Output)"
+            },
+            {
+                "points": 500,
+                "answer": "This technique combines two adjacent 20 MHz channels into a single, wider 40 MHz channel to increase bandwidth.",
+                "question": "Channel Bonding"
+            }
+        ]
+    },
+    {
+        "topic": "MODERN WI-FI",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The common name for the 802.11ax standard, which introduced technologies like OFDMA.",
+                "question": "Wi-Fi 6"
+            },
+            {
+                "points": 200,
+                "answer": "A key feature of Wi-Fi 6, this modulation scheme allows a channel to be subdivided into smaller resource units for parallel communication with multiple devices.",
+                "question": "OFDMA (Orthogonal Frequency-Division Multiple Access)"
+            },
+            {
+                "points": 300,
+                "answer": "This technology, enhanced in Wi-Fi 5 and 6, allows an AP to communicate with multiple stations simultaneously using different spatial streams.",
+                "question": "MU-MIMO (Multiuser MIMO)"
+            },
+            {
+                "points": 400,
+                "answer": "Wi-Fi 6 was the first standard to officially specify the use of this new, less congested frequency band to achieve the highest data rates.",
+                "question": "6 GHz"
+            },
+            {
+                "points": 500,
+                "answer": "A feature that allows an access point to encourage clients to connect to the less crowded 5 GHz or 6 GHz bands instead of 2.4 GHz.",
+                "question": "Band Steering"
+            }
+        ]
+    },
+    {
+        "topic": "WIRELESS LAN",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "The common name for a wireless network, which can be up to 32 characters long.",
+                "question": "SSID (Service Set Identifier)"
+            },
+            {
+                "points": 200,
+                "answer": "The arrangement of a single access point and the client stations it serves.",
+                "question": "BSS (Basic Service Set)"
+            },
+            {
+                "points": 300,
+                "answer": "The MAC address of an access point's radio that serves as the unique identifier for a Basic Service Set.",
+                "question": "BSSID (Basic Service Set Identifier)"
+            },
+            {
+                "points": 400,
+                "answer": "A group of multiple access points connected to the same wired network, all sharing the same network name to allow for roaming.",
+                "question": "ESS (Extended Service Set)"
+            },
+            {
+                "points": 500,
+                "answer": "The name of the management frame broadcast by an AP to advertise its presence, SSID, and other capabilities.",
+                "question": "Beacon Frame"
+            }
+        ]
+    },
+    {
+        "topic": "WIRELESS ATTACKS",
+        "clues": [
+            {
+                "points": 100,
+                "answer": "An unauthorized access point connected to a network, creating a potential security backdoor.",
+                "question": "Rogue AP"
+            },
+            {
+                "points": 200,
+                "answer": "A rogue AP that impersonates a legitimate AP by spoofing its SSID to trick users into connecting.",
+                "question": "Evil Twin"
+            },
+            {
+                "points": 300,
+                "answer": "An attack that sends spoofed management frames to force a client or all clients to disconnect from the AP.",
+                "question": "Deauthentication Attack"
+            },
+            {
+                "points": 400,
+                "answer": "A webpage that appears after a user connects to a public Wi-Fi network, requiring them to agree to terms or log in.",
+                "question": "Captive Portal"
+            },
+            {
+                "points": 500,
+                "answer": "A system that monitors the airwaves to detect unauthorized access points and other wireless threats.",
+                "question": "WIDS (Wireless Intrusion Detection System)"
+            }
+        ]
+    }
+]
