@@ -9,5 +9,8 @@
   "network-media.json",
   "network-types.json",
   "port-names.json",
-  "port-numbers.json"
+  "port-numbers.json",
+  "wifi1.json",
+  "wifi2.json",
+  "wifi3.json"
 ]
