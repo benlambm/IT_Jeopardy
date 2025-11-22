@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const boardElement = document.getElementById('jeopardy-board');
     const overlayElement = document.getElementById('overlay');
     const overlayContentElement = document.getElementById('overlay-content');
+
+    // Verify critical DOM elements exist
+    if (!boardElement || !overlayElement || !overlayContentElement) {
+        console.error('Critical DOM elements missing');
+        alert('Error: Page structure is incomplete. Please refresh or contact support.');
+        return;
+    }
+
     let gameData = null;
 
     // --- Data Loading and Validation ---
@@ -30,9 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- Update Game Title ---
-    // This function has been moved to utils.js
-
     // --- UI Rendering ---
     function renderBoard() {
         boardElement.innerHTML = ''; // Clear previous board state
@@ -60,11 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // This function has been moved to utils.js and is now JeopardyUtils.showFatalError
-    // function displayError(message) {
-    //     boardElement.innerHTML = `<div class="error-message"><strong>Error:</strong><br>${message}</div>`;
-    // }
-
     // --- Game Logic and Event Handling ---
     function handleClueClick(event) {
         const clueBox = event.target;
@@ -85,19 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // --- Stage 2: Show the Question (Correct Response) ---
             overlayContentElement.textContent = clueData.question;
 
-            // Remove previous listener to avoid bugs
-            overlayElement.removeEventListener('click', showQuestionHandler);
-
             const closeOverlayHandler = () => {
                 // --- Stage 3: Hide Overlay and Mark as Answered ---
                 overlayElement.classList.add('hidden');
                 clueBox.classList.add('answered');
                 clueBox.textContent = ''; // Clear the points
-                overlayElement.removeEventListener('click', closeOverlayHandler);
             };
-            overlayElement.addEventListener('click', closeOverlayHandler);
+            overlayElement.addEventListener('click', closeOverlayHandler, { once: true });
         };
-        overlayElement.addEventListener('click', showQuestionHandler, { once: true }); // Use { once: true } so this only fires once
+        overlayElement.addEventListener('click', showQuestionHandler, { once: true });
     }
 
     // --- Initialize the Game ---

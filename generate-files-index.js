@@ -16,7 +16,18 @@
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * NOTE: The following validation and formatting functions are duplicated from utils.js.
+ * This duplication is intentional because:
+ * - utils.js is browser-side code (uses window.JeopardyUtils namespace)
+ * - This script runs in Node.js and cannot import browser modules
+ * - Keeping both in sync ensures consistent validation across environments
+ *
+ * If you modify these functions, update both files accordingly.
+ */
+
 // Function to validate Jeopardy data structure
+// (Matches JeopardyUtils.isValidJeopardyData in utils.js)
 function isValidJeopardyFile(data) {
     if (!Array.isArray(data) || data.length !== 5) {
         return false;
@@ -33,6 +44,7 @@ function isValidJeopardyFile(data) {
 }
 
 // Function to get display name for a file
+// (Matches JeopardyUtils.formatDisplayName in utils.js)
 function getDisplayName(fileName) {
     let name = fileName.replace('.json', '');
     name = name.replace(/[-_]/g, ' ');

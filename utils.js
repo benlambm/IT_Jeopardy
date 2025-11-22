@@ -53,15 +53,6 @@ window.JeopardyUtils = (function () {
         return urlParams.get('data') || 'a-plus.json';
     }
 
-    /**
-     * Creates a URL for launching a game with specific data file
-     * @param {string} dataFile - The data file name
-     * @returns {string} Complete URL with data parameter
-     */
-    function createGameUrl(dataFile) {
-        const baseUrl = window.location.origin + window.location.pathname.replace('new.html', 'index.html');
-        return `${baseUrl}?data=${encodeURIComponent(dataFile)}`;
-    }
 
     /**
      * Displays a fatal error message in a full-screen overlay.
@@ -94,9 +85,9 @@ window.JeopardyUtils = (function () {
      */
     function updateGameTitle(dataFile) {
         const headerTitle = document.querySelector('header h1');
-        if (headerTitle && dataFile !== 'a-plus.json') {
+        if (headerTitle) {
             const gameName = formatDisplayName(dataFile);
-            headerTitle.textContent = `CLASSROOM JEOPARDY - ${gameName.toUpperCase()}`;
+            headerTitle.textContent = `IT JEOPARDY - ${gameName.toUpperCase()}`;
         }
     }
 
@@ -105,7 +96,6 @@ window.JeopardyUtils = (function () {
         formatDisplayName,
         isValidJeopardyData,
         getCurrentDataFile,
-        createGameUrl,
         showFatalError,
         updateGameTitle
     };
